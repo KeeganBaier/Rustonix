@@ -1,0 +1,146 @@
+18:41 [Info] Loading Oxide Core v2.0.3784...
+18:41 [Info] Loading extensions...
+18:41 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+18:41 [Info] Local compiler MD5: 0
+18:41 [Info] Compiler hashes did not match, downloading latest
+18:41 [Info] Downloading CSharpCompiler.x86_x64 for .cs (C#) plugin compilation
+18:41 [Info] Local hash did not match remote hash for CSharpCompiler.x86_x64, attempting download again
+18:41 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+18:41 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+18:41 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+18:41 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+18:41 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+18:41 [Info] Using Covalence provider for game 'Rust'
+18:41 [Info] Loading plugins...
+18:41 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+18:41 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+18:46 [Info] Loading Oxide Core v2.0.3784...
+18:46 [Info] Loading extensions...
+18:46 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+18:46 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+18:46 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+18:46 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+18:46 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+18:46 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+18:46 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+18:46 [Info] Using Covalence provider for game 'Rust'
+18:46 [Info] Loading plugins...
+18:46 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+18:46 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+20:13 [Info] Loading Oxide Core v2.0.3784...
+20:13 [Info] Loading extensions...
+20:13 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:13 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:13 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+20:13 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+20:13 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+20:13 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+20:13 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+20:13 [Info] Using Covalence provider for game 'Rust'
+20:13 [Info] Loading plugins...
+20:13 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+20:13 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+20:28 [Info] Loading Oxide Core v2.0.3784...
+20:28 [Info] Loading extensions...
+20:28 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:28 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:28 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+20:28 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+20:28 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+20:28 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+20:28 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+20:28 [Info] Using Covalence provider for game 'Rust'
+20:28 [Info] Loading plugins...
+20:28 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+20:28 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+20:34 [Info] Loading Oxide Core v2.0.3784...
+20:34 [Info] Loading extensions...
+20:34 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:34 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:34 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+20:34 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+20:34 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+20:34 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+20:34 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+20:34 [Info] Using Covalence provider for game 'Rust'
+20:34 [Info] Loading plugins...
+20:34 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+20:34 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+20:44 [Info] Loading Oxide Core v2.0.3784...
+20:44 [Info] Loading extensions...
+20:44 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:44 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:44 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+20:44 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+20:44 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+20:44 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+20:44 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+20:44 [Info] Using Covalence provider for game 'Rust'
+20:44 [Info] Loading plugins...
+20:44 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+20:44 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+20:50 [Info] Loading Oxide Core v2.0.3784...
+20:50 [Info] Loading extensions...
+20:50 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:50 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+20:50 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+20:50 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+20:50 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+20:50 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+20:50 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+20:50 [Info] Using Covalence provider for game 'Rust'
+20:50 [Info] Loading plugins...
+20:50 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+20:50 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+22:33 [Info] Loading Oxide Core v2.0.3784...
+22:33 [Info] Loading extensions...
+22:33 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+22:33 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+22:33 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+22:33 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+22:33 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+22:33 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+22:33 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+22:33 [Info] Using Covalence provider for game 'Rust'
+22:33 [Info] Loading plugins...
+22:33 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+22:33 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+22:36 [Info] Loading Oxide Core v2.0.3784...
+22:36 [Info] Loading extensions...
+22:36 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+22:36 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+22:36 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+22:36 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+22:36 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+22:36 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+22:36 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+22:36 [Info] Using Covalence provider for game 'Rust'
+22:36 [Info] Loading plugins...
+22:36 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+22:36 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+22:45 [Info] Loading Oxide Core v2.0.3784...
+22:45 [Info] Loading extensions...
+22:45 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+22:45 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+22:45 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+22:45 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+22:45 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+22:45 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+22:45 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+22:45 [Info] Using Covalence provider for game 'Rust'
+22:45 [Info] Loading plugins...
+22:45 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+22:45 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+23:26 [Info] Loading Oxide Core v2.0.3784...
+23:26 [Info] Loading extensions...
+23:26 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+23:26 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+23:26 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+23:26 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+23:26 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+23:26 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+23:26 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+23:26 [Info] Using Covalence provider for game 'Rust'
+23:26 [Info] Loading plugins...
+23:26 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+23:26 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors

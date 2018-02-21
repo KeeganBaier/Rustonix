@@ -1,0 +1,50 @@
+{
+  "Barrel": {
+    "barrelTypes": "loot-barrel|loot_barrel|loot_trash",
+    "enableBarrels": true,
+    "maxItemsPerBarrel": 3,
+    "minItemsPerBarrel": 1,
+    "randomAmountBarrels": true,
+    "refreshBarrels": false
+  },
+  "Crate": {
+    "crateTypes": "crate_normal|crate_tools",
+    "enableCrates": true,
+    "maxItemsPerCrate": 6,
+    "minItemsPerCrate": 3,
+    "randomAmountCrates": true,
+    "refreshCrates": true
+  },
+  "Generic": {
+    "dropWeaponsWithAmmo": true,
+    "enableScrapSpawn": true,
+    "enforceBlacklist": true,
+    "listUpdatesOnLoaded": true,
+    "listUpdatesOnRefresh": false,
+    "pluginEnabled": true,
+    "refreshMinutes": 30,
+    "removeStackedContainers": true,
+    "seperateLootTables": true
+  },
+  "HeliCrate": {
+    "includeHeliCrate": false,
+    "maxItemsPerHeliCrate": 4,
+    "minItemsPerHeliCrate": 2,
+    "randomAmountHeliCrate": true,
+    "useCustomTableHeli": true
+  },
+  "Rarity": {
+    "Override": {
+      "autoturret": 4,
+      "lmg.m249": 4,
+      "targeting.computer": 3
+    }
+  },
+  "SupplyDrop": {
+    "includeSupplyDrop": false,
+    "maxItemsPerSupplyDrop": 6,
+    "minItemsPerSupplyDrop": 3,
+    "randomAmountSupplyDrop": true,
+    "useCustomTableSupply": true
+  }
+}

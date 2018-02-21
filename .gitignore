@@ -1,0 +1,6 @@
+.idea
+.vscode
+.temp
+*.log
+.editorconfig
+Rust_Server

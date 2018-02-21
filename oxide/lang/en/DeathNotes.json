@@ -1,0 +1,8 @@
+{
+  "No Permission": "You don't have permission to use this command.",
+  "Hidden": "You do no longer see death messages.",
+  "Unhidden": "You will now see death messages.",
+  "Field Not Found": "The field could not be found!",
+  "True Or False": "{arg} must be 'true' or 'false'!",
+  "Field Set": "Field '{field}' set to '{value}'"
+}

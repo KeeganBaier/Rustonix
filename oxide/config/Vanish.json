@@ -1,0 +1,7 @@
+{
+  "Image URL for vanish icon (.png or .jpg)": "http://i.imgur.com/Gr5G3YI.png",
+  "Play sound effect (true/false)": true,
+  "Show visual indicator (true/false)": true,
+  "Vanish timeout (seconds, 0 to disable)": 0,
+  "Visible to admin (true/false)": false
+}

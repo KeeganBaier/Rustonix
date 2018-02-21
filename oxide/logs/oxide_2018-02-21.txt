@@ -1,0 +1,655 @@
+00:14 [Info] Loading Oxide Core v2.0.3784...
+00:14 [Info] Loading extensions...
+00:14 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:14 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:14 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+00:14 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+00:14 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+00:14 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+00:14 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+00:14 [Info] Using Covalence provider for game 'Rust'
+00:14 [Info] Loading plugins...
+00:14 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+00:14 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+00:22 [Info] Loading Oxide Core v2.0.3784...
+00:22 [Info] Loading extensions...
+00:22 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:22 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:22 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+00:22 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+00:22 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+00:22 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+00:22 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+00:22 [Info] Using Covalence provider for game 'Rust'
+00:22 [Info] Loading plugins...
+00:22 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+00:22 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+00:39 [Info] Loading Oxide Core v2.0.3784...
+00:39 [Info] Loading extensions...
+00:39 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:39 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:39 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+00:39 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+00:39 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+00:39 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+00:39 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+00:39 [Info] Using Covalence provider for game 'Rust'
+00:39 [Info] Loading plugins...
+00:39 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+00:39 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+00:40 [Info] Loading Oxide Core v2.0.3784...
+00:40 [Info] Loading extensions...
+00:40 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:40 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:40 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+00:40 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+00:40 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+00:40 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+00:40 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+00:40 [Info] Using Covalence provider for game 'Rust'
+00:40 [Info] Loading plugins...
+00:40 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+00:40 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+00:48 [Info] Loading Oxide Core v2.0.3784...
+00:48 [Info] Loading extensions...
+00:49 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:49 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:49 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+00:49 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+00:49 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+00:49 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+00:49 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+00:49 [Info] Using Covalence provider for game 'Rust'
+00:49 [Info] Loading plugins...
+00:49 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+00:49 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+00:53 [Info] Loading Oxide Core v2.0.3784...
+00:53 [Info] Loading extensions...
+00:53 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:53 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:53 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+00:53 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+00:53 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+00:53 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+00:53 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+00:53 [Info] Using Covalence provider for game 'Rust'
+00:53 [Info] Loading plugins...
+00:53 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+00:53 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+00:59 [Info] Loading Oxide Core v2.0.3784...
+00:59 [Info] Loading extensions...
+00:59 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:59 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+00:59 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+00:59 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+00:59 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+00:59 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+00:59 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+00:59 [Info] Using Covalence provider for game 'Rust'
+00:59 [Info] Loading plugins...
+00:59 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+00:59 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+01:08 [Info] Loading Oxide Core v2.0.3784...
+01:08 [Info] Loading extensions...
+01:08 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:08 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:08 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+01:08 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+01:08 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+01:08 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+01:08 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+01:08 [Info] Using Covalence provider for game 'Rust'
+01:08 [Info] Loading plugins...
+01:08 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+01:08 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+01:13 [Info] Loading Oxide Core v2.0.3784...
+01:13 [Info] Loading extensions...
+01:13 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:13 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:13 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+01:13 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+01:13 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+01:13 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+01:13 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+01:13 [Info] Using Covalence provider for game 'Rust'
+01:13 [Info] Loading plugins...
+01:13 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+01:13 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+01:16 [Info] Loading Oxide Core v2.0.3784...
+01:16 [Info] Loading extensions...
+01:16 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:16 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:16 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+01:16 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+01:16 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+01:16 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+01:16 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+01:16 [Info] Using Covalence provider for game 'Rust'
+01:16 [Info] Loading plugins...
+01:16 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+01:16 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+01:37 [Info] DeathNotes was compiled successfully in 1915ms
+01:37 [Warning] [Death Notes] Generating new config file...
+01:37 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+01:38 [Info] Clans was compiled successfully in 125ms
+01:38 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+01:38 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+01:38 [Info] GatherManager was compiled successfully in 135ms
+01:38 [Warning] [Gathering Manager] New configuration file created.
+01:38 [Warning] [Gathering Manager] Configuration file updated.
+01:38 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+01:38 [Info] RemoverTool was compiled successfully in 157ms
+01:38 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+01:38 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+01:38 [Info] Loading Oxide Core v2.0.3784...
+01:38 [Info] Loading extensions...
+01:38 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:38 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:38 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+01:38 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+01:38 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+01:38 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+01:38 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+01:38 [Info] Using Covalence provider for game 'Rust'
+01:38 [Info] Loading plugins...
+01:38 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+01:38 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+01:39 [Info] Clans, DeathNotes, GatherManager and RemoverTool were compiled successfully in 1995ms
+01:39 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+01:39 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+01:39 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+01:39 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+01:40 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+01:40 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+01:47 [Info] QuickSmelt was compiled successfully in 1794ms
+01:47 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+01:52 [Info] NTeleportation was compiled successfully in 1921ms
+01:52 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+01:52 [Info] Godmode was compiled successfully in 132ms
+01:52 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+01:52 [Info] HeliControl was compiled successfully in 196ms
+01:52 [Info] [HeliControl] No weapons data found, creating new file...
+01:52 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+01:52 [Info] Vanish was compiled successfully in 117ms
+01:52 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+01:53 [Info] PrivateMessage was compiled successfully in 141ms
+01:53 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+01:53 [Info] TimeOfDay was compiled successfully in 109ms
+01:53 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+01:53 [Info] GUIAnnouncements was compiled successfully in 160ms
+01:53 [Warning] [GUIAnnouncements] A new configuration file has been created.
+01:53 [Info] [GUIAnnouncements] Configuration file has been updated.
+01:53 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+01:53 [Info] SharedDoors was compiled successfully in 116ms
+01:53 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+01:53 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+01:53 [Info] Loading Oxide Core v2.0.3784...
+01:53 [Info] Loading extensions...
+01:53 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:53 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+01:53 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+01:53 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+01:53 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+01:53 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+01:53 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+01:53 [Info] Using Covalence provider for game 'Rust'
+01:53 [Info] Loading plugins...
+01:53 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+01:53 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+01:53 [Info] Clans, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, NTeleportation, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, TimeOfDay and Vanish were compiled successfully in 2147ms
+01:53 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+01:53 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+01:53 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+01:53 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+01:53 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+01:53 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+01:53 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+01:53 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+01:53 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+01:53 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+01:53 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+01:53 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+01:53 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+01:55 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+01:55 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+01:55 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+02:04 [Info] Loading Oxide Core v2.0.3784...
+02:04 [Info] Loading extensions...
+02:04 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:04 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:04 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:04 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:04 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:04 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:04 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:04 [Info] Using Covalence provider for game 'Rust'
+02:04 [Info] Loading plugins...
+02:04 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:04 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:04 [Info] Clans, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, NTeleportation, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, TimeOfDay and Vanish were compiled successfully in 2152ms
+02:04 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:04 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:04 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:04 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:04 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:04 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:04 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:04 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:04 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:04 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:04 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:04 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:04 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:08 [Info] Loading Oxide Core v2.0.3784...
+02:08 [Info] Loading extensions...
+02:08 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:08 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:08 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:08 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:08 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:08 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:08 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:08 [Info] Using Covalence provider for game 'Rust'
+02:08 [Info] Loading plugins...
+02:08 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:08 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:08 [Info] Clans, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, NTeleportation, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, TimeOfDay and Vanish were compiled successfully in 2171ms
+02:08 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:08 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:08 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:08 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:08 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:08 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:08 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:08 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:08 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:08 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:08 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:08 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:08 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:13 [Info] Loading Oxide Core v2.0.3784...
+02:13 [Info] Loading extensions...
+02:13 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:13 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:13 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:13 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:13 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:13 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:13 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:13 [Info] Using Covalence provider for game 'Rust'
+02:13 [Info] Loading plugins...
+02:13 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:13 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:13 [Info] Clans, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, NTeleportation, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, TimeOfDay and Vanish were compiled successfully in 2144ms
+02:13 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:13 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:13 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:13 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:13 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:13 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:13 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:13 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:13 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:13 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:13 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:13 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:13 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:16 [Info] Loading Oxide Core v2.0.3784...
+02:16 [Info] Loading extensions...
+02:16 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:16 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:16 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:16 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:16 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:16 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:16 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:16 [Info] Using Covalence provider for game 'Rust'
+02:16 [Info] Loading plugins...
+02:16 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:16 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:16 [Info] Clans, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, NTeleportation, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, TimeOfDay and Vanish were compiled successfully in 2152ms
+02:16 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:16 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:16 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:16 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:16 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:16 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:16 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:16 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:16 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:16 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:16 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:16 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:16 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:16 [Info] Loading Oxide Core v2.0.3784...
+02:16 [Info] Loading extensions...
+02:16 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:16 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:16 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:16 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:16 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:16 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:16 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:16 [Info] Using Covalence provider for game 'Rust'
+02:16 [Info] Loading plugins...
+02:16 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:16 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:16 [Info] Clans, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, NTeleportation, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, TimeOfDay and Vanish were compiled successfully in 2149ms
+02:16 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:16 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:16 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:16 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:16 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:16 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:16 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:16 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:16 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:16 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:16 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:16 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:16 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:21 [Info] Loading Oxide Core v2.0.3784...
+02:21 [Info] Loading extensions...
+02:21 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:21 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:21 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:21 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:21 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:21 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:21 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:21 [Info] Using Covalence provider for game 'Rust'
+02:21 [Info] Loading plugins...
+02:21 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:21 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:21 [Info] Clans, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, NTeleportation, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, TimeOfDay and Vanish were compiled successfully in 2158ms
+02:21 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:21 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:21 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:21 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:21 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:21 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:21 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:21 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:21 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:21 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:21 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:21 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:21 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:23 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+02:23 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+02:23 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+02:25 [Info] [Death Notes] Bh0WdY had enough of life.
+02:25 [Info] [NTeleportation] Kahrazie teleported to Bh0WdY.
+02:25 [Info] [Death Notes] .John had enough of life.
+02:25 [Info] [Death Notes] SirParth had enough of life.
+02:26 [Info] [Death Notes] .John used a Rock to knock SirParth out.
+02:29 [Info] [Death Notes] WudupBroski was shot in the Head by .John with a Eoka Pistol from 4.23m.
+02:29 [Info] [Death Notes] WudupBroski had enough of life.
+02:36 [Info] BetterLoot was compiled successfully in 1861ms
+02:36 [Info] [BetterLoot] No Blacklist found, creating new file...
+02:36 [Info] [BetterLoot] HeliCrate > table not found, option disabled by 'includeHeliCrate' > Creating a new file.
+02:36 [Info] [BetterLoot] SupplyDrop > table not found, option disabled by 'includeSupplyDrop' > Creating a new file.
+02:36 [Info] [BetterLoot] Updating internals ...
+02:36 [Info] [BetterLoot] There are 37 items in the global Barrels LootTable.
+02:36 [Info] [BetterLoot] There are 37 items in the global Crates LootTable.
+02:36 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+02:36 [Info] [BetterLoot] Exported 377 items to 'NamesList'
+02:36 [Info] [BetterLoot] Removed 1 stacked LootContainer (out of 670)
+02:36 [Info] [BetterLoot] Internals have been updated. Populated '469' supported containers.
+02:37 [Info] [Death Notes] Bh0WdY had enough of life.
+02:37 [Info] [TimeOfDay] Day is already active
+02:38 [Info] [TimeOfDay] The 'nightLength' has been set to '2'
+02:38 [Info] [Death Notes] A Bear followed WudupBroski until it finally caught him.
+02:38 [Info] [TimeOfDay] The 'nightLength' has been set to '1'
+02:38 [Info] [TimeOfDay] Current nighttime skipped
+02:39 [Info] [TimeOfDay] The 'dayLength' has been set to '60'
+02:40 [Info] [HeliControl] 1 Helicopter(s) called on: .John
+02:41 [Info] [Death Notes] .John was shot to pieces by a Patrol Helicopter.
+02:42 [Info] [Death Notes] Ripper was stabbed to death by .John using a Bone Knife.
+02:46 [Info] [Death Notes] Bh0WdY was shot to pieces by a Patrol Helicopter.
+02:48 [Info] [NTeleportation] Bh0WdY teleported to Ripper.
+02:54 [Info] [NTeleportation] Bh0WdY teleported to WudupBroski.
+02:54 [Info] [Death Notes] WudupBroski was shot in the Left Shoulder by Ripper with a M249 from 0.44m.
+02:54 [Info] [Death Notes] Bh0WdY was shot in the Head by .John with a M249 from 1.13m.
+02:55 [Info] [NTeleportation] Bh0WdY teleported to .John.
+02:57 [Info] [Death Notes] SirParth was shot to pieces by a Patrol Helicopter.
+02:57 [Info] Player 'Kahrazie(76561198118957847)' added to group: admin
+02:57 [Info] [Death Notes] Bh0WdY killed a Bear with a Assault Rifle from 24.83m.
+02:57 [Info] [Death Notes] .John was shot to pieces by a Patrol Helicopter.
+02:58 [Info] [Death Notes] WudupBroski was shot in the Head by Bh0WdY with a M249 from 23.35m.
+02:58 [Info] Usage: grant <group|user> <name|id> <permission>
+02:58 [Info] Group 'admin' granted permission 'helicontrol.admin'
+02:59 [Error] Failed to call hook 'cmdKillHeli' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllHelis (Boolean isForced) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillHeli (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:01 [Info] [Death Notes] SirParth was shot to pieces by a Patrol Helicopter.
+03:02 [Info] [Death Notes] .John was shot to pieces by a Patrol Helicopter.
+03:02 [Error] Failed to call hook 'cmdKillFB' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllFB () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillFB (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:02 [Info] [Death Notes] .John was shot to pieces by a Patrol Helicopter.
+03:02 [Error] Failed to call hook 'cmdKillFB' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllFB () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillFB (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:02 [Error] Failed to call hook 'cmdKillFB' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllFB () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillFB (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:03 [Error] Failed to call hook 'cmdKillFB' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllFB () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillFB (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:03 [Error] Failed to call hook 'cmdKillFB' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[FireBall].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllFB () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillFB (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:04 [Error] Failed to call hook 'cmdKillHeli' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllHelis (Boolean isForced) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillHeli (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:04 [Error] Failed to call hook 'cmdKillHeli' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllHelis (Boolean isForced) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillHeli (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:04 [Error] Failed to call hook 'cmdKillHeli' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllHelis (Boolean isForced) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillHeli (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:05 [Error] Failed to call hook 'cmdKillHeli' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllHelis (Boolean isForced) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillHeli (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:05 [Info] [Death Notes] A Wolf followed SirParth until it finally caught him.
+03:06 [Info] [Death Notes] WudupBroski was shot in the Head by .John with a M249 from 1.65m.
+03:06 [Info] Group 'admin' granted permission 'godmode.admin'
+03:07 [Info] [Death Notes] .John was shot in the Stomach by Bh0WdY with a M249 (Muzzle Brake) from 9.03m.
+03:08 [Info] [NTeleportation] Bh0WdY teleported .John to Bh0WdY.
+03:08 [Info] [NTeleportation] Bh0WdY teleported Ripper to Bh0WdY.
+03:08 [Info] Group 'admin' granted permission 'godmode.toggle'
+03:09 [Info] [Death Notes] [God] Kahrazie was shot in the Neck by .John with a M249 from 10.74m.
+03:09 [Info] [Death Notes] WudupBroski was shot in the Left Forearm by .John with a M249 from 11.85m.
+03:09 [Info] Group 'admin' granted permission 'godmode.invulnerable'
+03:09 [Info] [Death Notes] .John was shredded by WudupBroski's Timed Explosive
+03:09 [Info] Group 'admin' granted permission 'godmode.lootplayers'
+03:10 [Info] Group 'admin' granted permission 'godmode.lootprotection'
+03:10 [Info] Group 'admin' granted permission 'godmode.noattacking'
+03:10 [Info] Group 'admin' granted permission 'godmode.untiring'
+03:11 [Info] [NTeleportation] [God] Kahrazie teleported to Bh0WdY.
+03:11 [Info] [Death Notes] WudupBroski was shot in the Left Arm by Bh0WdY with a M249 (Muzzle Brake) from 5.09m.
+03:11 [Info] [NTeleportation] Bh0WdY teleported WudupBroski to Bh0WdY.
+03:12 [Info] Group 'admin' granted permission 'vanish.use'
+03:12 [Info] Group 'admin' granted permission 'vanish.damage.buildings'
+03:12 [Info] Group 'admin' granted permission 'vanish.damage.animals'
+03:12 [Info] Group 'admin' granted permission 'vanish.damage.players'
+03:12 [Info] Group 'admin' granted permission 'vanish.abilities.invulnerable'
+03:13 [Info] Group 'admin' granted permission 'vanish.abilities.teleport'
+03:17 [Info] [Death Notes] SirParth was shot to pieces by a Patrol Helicopter.
+03:18 [Info] [Death Notes] WudupBroski was shot to pieces by a Patrol Helicopter.
+03:18 [Info] [Death Notes] WudupBroski was shot to pieces by a Patrol Helicopter.
+03:18 [Info] [NTeleportation] [God] Kahrazie teleported WudupBroski to [God] Kahrazie.
+03:18 [Info] [NTeleportation] [God] Kahrazie teleported SirParth to [God] Kahrazie.
+03:19 [Error] Failed to call hook 'cmdKillHeli' on plugin 'HeliControl v1.2.6' (InvalidOperationException: HashSet have been modified while it was iterated over)
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].CheckState () [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.HashSet`1+Enumerator[BaseHelicopter].MoveNext () [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.killAllHelis (Boolean isForced) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.cmdKillHeli (IPlayer player, System.String command, System.String[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.HeliControl.DirectCallHook (System.String name, System.Object& ret, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Plugins.CSharpPlugin.InvokeMethod (Oxide.Core.Plugins.HookMethod method, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.CSPlugin.OnCallHook (System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Oxide.Core.Plugins.Plugin.CallHook (System.String hook, System.Object[] args) [0x00000] in <filename unknown>:0 
+03:22 [Info] StackSizeController was compiled successfully in 1788ms
+03:22 [Warning] [Stack Size Controller] Creating a new configuration file.
+03:22 [Warning] [Stack Size Controller] Updating configuration file with new values.
+03:22 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+03:30 [Info] [Death Notes] SirParth was shot in the Left Forearm by Ripper with a Bolt Action Rifle (Silencer) from 89.89m.
+03:32 [Info] [NTeleportation] Bh0WdY teleported SirParth to Bh0WdY.
+03:34 [Info] FancyDrop was compiled successfully in 1976ms
+03:34 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+03:34 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+03:34 [Info] [FancyDrop] Builtin Airdrop removed
+03:34 [Info] [FancyDrop] Next timed Airdrop in 48 minutes
+03:34 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+03:34 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+03:34 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-513.3, 25.5, 506.5)
+03:34 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-509.9, 24.3, 510.0)
+03:34 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-517.3, 24.3, 492.8)
+03:34 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-524.0, 26.2, 508.4)
+03:34 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-523.3, 25.7, 514.7)
+03:34 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-502.1, 25.4, 525.2)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-501.9, 25.2, 523.2)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-504.0, 24.7, 518.8)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-506.9, 24.5, 515.5)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-510.9, 25.0, 518.9)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-507.3, 25.0, 520.5)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-524.3, 26.5, 521.0)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-526.0, 26.5, 518.3)
+03:35 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-493.0, 24.3, 456.1)
+03:35 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-496.2, 24.3, 457.1)
+03:35 [Info] [NTeleportation] Bh0WdY teleported WudupBroski to Bh0WdY.
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-512.1, 24.3, 474.9)
+03:35 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-511.3, 24.3, 477.5)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-515.0, 24.3, 472.7)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-511.1, 24.3, 468.3)
+03:36 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-527.3, 24.3, 451.7)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-511.3, 25.4, 473.7)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-507.8, 26.0, 471.6)
+03:36 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-505.1, 24.3, 471.3)
+03:36 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-497.2, 25.4, 474.8)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-497.6, 25.1, 478.1)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-493.1, 24.3, 482.1)
+03:36 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-503.4, 24.3, 480.2)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-494.5, 24.3, 485.6)
+03:36 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-498.5, 25.0, 486.9)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-489.0, 24.3, 483.2)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-486.7, 24.3, 478.6)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-485.9, 24.3, 464.5)
+03:36 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-473.9, 24.3, 491.6)
+03:36 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-477.1, 27.9, 464.3)
+03:36 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-470.6, 24.3, 483.5)
+03:36 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-470.7, 24.3, 496.7)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-454.8, 24.3, 511.3)
+03:37 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-463.1, 25.4, 456.2)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-457.0, 24.3, 507.5)
+03:37 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-470.8, 24.3, 464.4)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-458.1, 24.3, 523.8)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-464.0, 24.3, 530.1)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-478.9, 24.4, 533.1)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-493.3, 25.0, 532.2)
+03:37 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-478.4, 24.3, 510.1)
+03:37 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-471.0, 25.4, 511.2)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-496.7, 24.9, 536.5)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-498.3, 25.2, 531.5)
+03:37 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-467.0, 24.3, 518.9)
+03:37 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-495.4, 25.1, 527.8)
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-532.8, 28.7, 523.1)
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-535.2, 28.3, 520.3)
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-576.5, 34.3, 500.0)
+03:38 [Info] [NTeleportation] Bh0WdY teleported WudupBroski to Bh0WdY.
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-576.2, 31.7, 489.6)
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-584.3, 37.1, 480.9)
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-580.9, 33.9, 476.1)
+03:38 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-559.1, 26.6, 488.1)
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-592.2, 34.9, 466.6)
+03:38 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-559.0, 28.5, 499.0)
+03:38 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-595.3, 36.4, 465.7)
+03:39 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-606.1, 43.8, 491.9)
+03:39 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-610.1, 37.4, 505.0)
+03:39 [Info] [FancyDrop] Ripper (76561198364636201) looted the Drop at: (-597.2, 37.9, 499.4)
+03:39 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-552.9, 26.8, 503.0)
+03:39 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-550.0, 24.3, 476.3)
+03:39 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-517.6, 24.3, 477.4)
+03:39 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-524.3, 24.3, 482.2)
+03:39 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-516.4, 24.7, 490.4)
+03:39 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-511.1, 24.3, 484.7)
+03:40 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-509.9, 27.6, 487.5)
+03:40 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-520.2, 24.4, 494.8)
+03:40 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-530.6, 24.3, 493.2)
+03:40 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-535.3, 24.3, 493.4)
+03:40 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-538.3, 24.3, 491.6)
+03:40 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-538.9, 25.2, 499.7)
+03:40 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-536.6, 25.0, 501.1)
+03:40 [Info] [Death Notes] Ripper was shredded by Bh0WdY's Rocket Basic
+03:45 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-534.5, 30.0, 524.9)
+03:45 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-538.8, 29.2, 522.5)
+03:45 [Info] [Death Notes] WudupBroski was shot in the Jaw by SirParth with a M249 (Weapon flashlight | Simple Handmade Sight | Muzzle Brake) from 0.27m.
+03:45 [Info] [NTeleportation] Bh0WdY teleported WudupBroski to Bh0WdY.
+03:45 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-540.5, 31.6, 542.4)
+03:46 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-549.9, 31.9, 541.5)
+03:46 [Info] [FancyDrop] SirParth (76561198034239079) looted the Drop at: (-464.5, 24.3, 499.1)
+03:47 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-494.6, 24.5, 518.2)
+03:47 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-485.8, 24.3, 511.4)
+03:50 [Info] [Death Notes] SirParth killed a Horse with a Bolt Action Rifle from 83.05m.
+03:50 [Info] [Death Notes] SirParth killed a Horse with a Bolt Action Rifle from 127.74m.

@@ -1,0 +1,52 @@
+{
+  "AmountsOfBecome": {
+    "can_beans_empty": 15,
+    "can_tuna_empty": 10,
+    "chicken_raw": 1,
+    "crude_oil": 3,
+    "fish_raw": 1,
+    "hq_metal_ore": 1,
+    "humanmeat_raw": 1,
+    "meat.bear.raw": 1,
+    "meat.deer.raw": 1,
+    "meat.pork.raw": 1,
+    "meat.wolf.raw": 1,
+    "metal_ore": 1,
+    "sulfur_ore": 1
+  },
+  "CharcoalMultiplier": 1,
+  "CharcoalPercentLoss": 25,
+  "CookInFurnaces": false,
+  "CookTimes": {
+    "can_beans_empty": 30.0,
+    "can_tuna_empty": 30.0,
+    "chicken_raw": 30.0,
+    "crude_oil": 10.0,
+    "fish_raw": 20.0,
+    "hq_metal_ore": 20.0,
+    "humanmeat_raw": 30.0,
+    "meat.bear.raw": 30.0,
+    "meat.deer.raw": 30.0,
+    "meat.pork.raw": 30.0,
+    "meat.wolf.raw": 30.0,
+    "metal_ore": 10.0,
+    "sulfur_ore": 5.0
+  },
+  "ExpertModeEnabled": false,
+  "OvenMultipliers": {
+    "bbq.deployed": 1.0,
+    "campfire": 1.0,
+    "fireplace.deployed": 1.0,
+    "furnace": 1.0,
+    "furnace.large": 1.0,
+    "hobobarrel_static": 1.0,
+    "jackolantern.angry": 1.0,
+    "jackolantern.happy": 1.0,
+    "refinery_small_deployed": 1.0,
+    "skull_fire_pit": 1.0,
+    "small_refinery_static": 1.0
+  },
+  "OvercookMeat": false,
+  "UsePermissions": false,
+  "WoodFuelAmount": 10.0
+}

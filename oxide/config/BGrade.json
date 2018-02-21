@@ -1,0 +1,23 @@
+{
+  "Building Attack Settings": {
+    "Cooldown Time": 30,
+    "Enabled": true
+  },
+  "Command Settings": {
+    "Chat Commands": [
+      "bgrade",
+      "grade"
+    ],
+    "Console Commands": [
+      "bgrade.up"
+    ]
+  },
+  "Refund Settings": {
+    "Refund on Block": true
+  },
+  "Timer Settings": {
+    "Default Timer": 30,
+    "Enabled": true,
+    "Max Timer": 180
+  }
+}
