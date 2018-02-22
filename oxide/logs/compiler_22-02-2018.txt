@@ -1,0 +1,9 @@
+[SERVER v1.0.24] Started as service
+[SERVER v1.0.24] Running as service
+[SERVER v1.0.24] Got Message: Ready
+[SERVER v1.0.24] Got Message: Compile
+[SERVER v1.0.24] Console: 
+[SERVER v1.0.24] Got Message: Compile
+[SERVER v1.0.24] Console: 
+[SERVER v1.0.24] Connection closed.
+[SERVER v1.0.24] Shutdown
