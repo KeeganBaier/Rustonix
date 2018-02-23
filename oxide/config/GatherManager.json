@@ -25,32 +25,22 @@
   },
   "Options": {
     "GatherDispenserModifiers": {
-      "Flesh": 3.0,
+      "Tree": 3.0,
       "Ore": 3.0,
-      "Tree": 3.0
+      "Flesh": 3.0
     },
     "GatherResourceModifiers": {
       "Sulfur": 3.0,
       "Wood": 3.0,
       "Cloth": 3.0,
-      "Stones": 3.0,
-      "Sulfur Ore": 3.0,
-      "Metal Ore": 3.0
+      "Stones": 3.0
     },
     "MiningQuarryResourceTickRate": 3.0,
     "PickupResourceModifiers": {
       "Stones": 3.0,
-      "Wood": 3.0,
-      "Cloth": 3.0
+      "Wood": 3.0
     },
-    "QuarryResourceModifiers": {
-      "Stones": 3.0,
-      "Sulfur": 3.0,
-      "High Quality Metal": 3.0,
-      "Metal Ore": 3.0,
-      "Crude Oil": 3.0,
-      "Water": 3.0
-    },
+    "QuarryResourceModifiers": {},
     "SurveyResourceModifiers": {}
   },
   "Settings": {
