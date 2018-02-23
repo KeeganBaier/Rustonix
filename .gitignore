@@ -4,3 +4,5 @@
 *.log
 .editorconfig
 Rust_Server
+oxide/logs
+Server
