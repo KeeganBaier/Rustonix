@@ -5,3 +5,8 @@
 - Run update.bat
 - Install Oxide http://oxidemod.org/downloads/
 - Overwrite the RustDedicated_Data with the oxide RustDedicated_Data
+- Run the Server
+- You now have an oxide directory located in Server/rustds/
+- Move the oxide plugins (pulled from this repository) to replace that directory
+- Restart the Server
+- Connect to the server by launching the Rust Client, F1, client.connect localhost:28015
