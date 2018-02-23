@@ -37,11 +37,15 @@
   "Raid": {
     "Block": {
       "damageTypes": [
+        "Bullet",
+        "Blunt",
+        "Stab",
+        "Slash",
         "Explosion",
         "Heat"
       ],
       "distance": 100.0,
-      "duration": 600.0,
+      "duration": 300.0,
       "enabled": true,
       "excludePrefabs": [
         "ladder.wooden"

@@ -1,17 +1,15 @@
 {
   "Barrel": {
-    "barrelTypes": "loot-barrel|loot_barrel|loot_trash|loot_barrel_1|loot_barrel_2|oil_barrel",
+    "barrelTypes": "loot-barrel|loot_barrel|loot_trash",
     "enableBarrels": true,
-    "enforceBlacklist": true,
-    "maxItemsPerBarrel": 4,
-    "minItemsPerBarrel": 3,
+    "maxItemsPerBarrel": 3,
+    "minItemsPerBarrel": 1,
     "randomAmountBarrels": true,
     "refreshBarrels": false
   },
   "Crate": {
-    "crateTypes": "crate_normal|crate_tools|crate_elite|crate_mine|minecart|crate_basic|bradley_crate|crate_normal_2_medical|crate_normal_2_food|crate_normal_2|foodbox",
+    "crateTypes": "crate_normal|crate_tools",
     "enableCrates": true,
-    "enforceBlacklist": true,
     "maxItemsPerCrate": 6,
     "minItemsPerCrate": 3,
     "randomAmountCrates": true,
@@ -30,8 +28,7 @@
   },
   "HeliCrate": {
     "includeHeliCrate": false,
-    "enforceBlacklist": true,
-    "maxItemsPerHeliCrate": 5,
+    "maxItemsPerHeliCrate": 4,
     "minItemsPerHeliCrate": 2,
     "randomAmountHeliCrate": true,
     "useCustomTableHeli": true
@@ -45,7 +42,6 @@
   },
   "SupplyDrop": {
     "includeSupplyDrop": false,
-    "enforceBlacklist": true,
     "maxItemsPerSupplyDrop": 6,
     "minItemsPerSupplyDrop": 3,
     "randomAmountSupplyDrop": true,

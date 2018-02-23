@@ -107,6 +107,15 @@
   "Remove - Normal - RaidBlocker - By Surrounding Players - Radius": 120,
   "Remove - Normal - RaidBlocker - Time": 300,
   "Remove - Normal - Refund": {
+    "Armored Double Door": {
+      "armored double door": 1
+    },
+    "Bed": {
+      "bed": 1
+    },
+    "High External Stone Wall": {
+      "high external stone wall": 1
+    },
     "Metal": {
       "metal fragments": 50
     },

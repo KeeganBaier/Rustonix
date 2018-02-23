@@ -18,7 +18,7 @@ namespace Oxide.Plugins
 	{
 		[PluginReference]
 		Plugin CustomLootSpawns;
-
+		
 		bool Changed = false;
 		int populatedContainers;
 
@@ -79,7 +79,7 @@ namespace Oxide.Plugins
 			dp.Add("targeting.computer", 3);
 			return dp;
 		}
-
+		
 		#region Config
 
 		bool pluginEnabled;
@@ -114,7 +114,7 @@ namespace Oxide.Plugins
 		bool useCustomTableSupply;
 		bool refreshBarrels;
 		bool refreshCrates;
-
+		
 		Dictionary<string,object> rarityItemOverride = null;
 
 		object GetConfig(string menu, string datavalue, object defaultValue)
@@ -139,18 +139,18 @@ namespace Oxide.Plugins
 		void LoadVariables()
 		{
 			rarityItemOverride = (Dictionary<string, object>)GetConfig("Rarity", "Override", defaultItemOverride());
-
+			
 			minItemsPerBarrel =  Convert.ToInt32(GetConfig("Barrel", "minItemsPerBarrel", 1));
 			maxItemsPerBarrel = Convert.ToInt32(GetConfig("Barrel", "maxItemsPerBarrel", 3));
 			refreshBarrels = Convert.ToBoolean(GetConfig("Barrel", "refreshBarrels", false));
-			barrelTypes = Convert.ToString(GetConfig("Barrel","barrelTypes","loot-barrel|loot_barrel|loot_trash|loot_barrel_1|loot_barrel_2|oil_barrel"));
+			barrelTypes = Convert.ToString(GetConfig("Barrel","barrelTypes","loot-barrel|loot_barrel|loot_trash"));
 			enableBarrels = Convert.ToBoolean(GetConfig("Barrel", "enableBarrels", true));
 			randomAmountBarrels = Convert.ToBoolean(GetConfig("Barrel", "randomAmountBarrels", true));
 
 			minItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "minItemsPerCrate", 3));
 			maxItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "maxItemsPerCrate", 6));
 			refreshCrates = Convert.ToBoolean(GetConfig("Crate", "refreshCrates", true));
-			crateTypes = Convert.ToString(GetConfig("Crate","crateTypes","crate_normal|crate_tools|crate_elite|crate_mine|minecart|crate_basic|bradley_crate|crate_normal_2_medical|crate_normal_2_food|crate_normal_2|foodbox"));
+			crateTypes = Convert.ToString(GetConfig("Crate","crateTypes","crate_normal|crate_tools"));
 			enableCrates = Convert.ToBoolean(GetConfig("Crate", "enableCrates", true));
 			randomAmountCrates = Convert.ToBoolean(GetConfig("Crate", "randomAmountCrates", true));
 
@@ -227,7 +227,7 @@ namespace Oxide.Plugins
 			}
 			UpdateInternals(listUpdatesOnLoaded);
 		}
-
+		
 		void Unload()
         {
             var lootContainers = Resources.FindObjectsOfTypeAll<LootContainer>().Where(c => c.isActiveAndEnabled && !c.IsInvoking("SpawnLoot")).ToList();
@@ -378,7 +378,7 @@ namespace Oxide.Plugins
 				if (check > 4) check = 4;
 				rarityItemOverride[rarity.Key] = check;
 			}
-
+			
 			if (seperateLootTables)
 			{
 				foreach (var item in originalItemsB)
@@ -515,7 +515,7 @@ namespace Oxide.Plugins
 				populatedContainers = 0;
 			});
 		}
-
+		
 
 		void FixLoot()
 		{
@@ -889,7 +889,7 @@ namespace Oxide.Plugins
 			container.inventorySlots = n;
 			if (n > 18) container.panelName= "largewoodbox";
 			else container.panelName= "generic";
-
+			
 			var sb = new StringBuilder();
 			var items = new List<Item>();
 			var itemNames = new List<string>();
@@ -1146,7 +1146,7 @@ namespace Oxide.Plugins
 					if (it.category == ItemCategory.Attire) continue;
 					if (it.category == ItemCategory.Resources) continue;
 					if (it.category == ItemCategory.Misc) continue;
-					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Items) continue;					
 					if (it.category == ItemCategory.Food) stack = 10;
 					if (it.category == ItemCategory.Medical) stack = 5;
 					if (it.category == ItemCategory.Component) stack = 5;
@@ -1156,7 +1156,7 @@ namespace Oxide.Plugins
 				Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\LootTable", storedLootTable);
 			}
 		}
-
+		
 
 		void SaveLootTable() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\LootTable", storedLootTable);
 
@@ -1200,7 +1200,7 @@ namespace Oxide.Plugins
 					if (it.category == ItemCategory.Attire) continue;
 					if (it.category == ItemCategory.Resources) continue;
 					if (it.category == ItemCategory.Misc) continue;
-					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Items) continue;		
 					if (it.category == ItemCategory.Food) stack = 10;
 					if (it.category == ItemCategory.Medical) stack = 5;
 					if (it.category == ItemCategory.Component) stack = 5;
@@ -1284,7 +1284,7 @@ namespace Oxide.Plugins
 					if (it.category == ItemCategory.Attire) stack = 1;
 					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
 					if (it.category == ItemCategory.Misc) continue;
-					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Items) continue;		
 					if (it.category == ItemCategory.Food) continue;
 					if (it.category == ItemCategory.Medical) continue;
 					if (it.category == ItemCategory.Component) continue;
@@ -1342,7 +1342,7 @@ namespace Oxide.Plugins
 					if (it.category == ItemCategory.Attire) continue;
 					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
 					if (it.category == ItemCategory.Misc) continue;
-					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Items) continue;		
 					if (it.category == ItemCategory.Food) continue;
 					if (it.category == ItemCategory.Medical) continue;
 					if (it.category == ItemCategory.Component) continue;
