@@ -1,17 +1,13 @@
 {
   "Attachments": {
-    "Holosight": "Holosight",
     "Muzzle Brake": "Muzzle Brake",
     "Silencer": "Silencer",
     "Simple Handmade Sight": "Simple Handmade Sight",
-    "Weapon flashlight": "Weapon flashlight",
-    "Weapon Lasersight": "Weapon Lasersight"
+    "Weapon flashlight": "Weapon flashlight"
   },
   "Bodyparts": {
     "Body": "Body",
-    "Chest": "Chest",
     "Head": "Head",
-    "Head2": "Head2",
     "Jaw": "Jaw",
     "L_Hip": "L_Hip",
     "Left Arm": "Left Arm",
@@ -19,14 +15,9 @@
     "Left Shoulder": "Left Shoulder",
     "Lower Spine": "Lower Spine",
     "Neck": "Neck",
-    "Neck2": "Neck2",
-    "Pelvis": "Pelvis",
-    "Right Forearm": "Right Forearm",
     "Right Hand": "Right Hand",
     "Right_foot": "Right_foot",
-    "Right_Shoulder": "Right_Shoulder",
     "Spine_2": "Spine_2",
-    "Spine2": "Spine2",
     "Stomach": "Stomach"
   },
   "Messages": {
@@ -144,7 +135,6 @@
   },
   "Names": {
     "Bear": "Bear",
-    "Boar": "Boar",
     "Horse": "Horse",
     "Patrol Helicopter": "Patrol Helicopter",
     "Wolf": "Wolf"
