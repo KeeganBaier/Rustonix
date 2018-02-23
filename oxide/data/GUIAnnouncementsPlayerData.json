@@ -3,7 +3,7 @@
     "76561198118957847": {
       "Name": "Kahrazie",
       "UserID": "76561198118957847",
-      "TimesJoined": 7,
+      "TimesJoined": 10,
       "Dead": false
     },
     "76561198034239079": {
@@ -15,7 +15,7 @@
     "76561198080306176": {
       "Name": "Bh0WdY",
       "UserID": "76561198080306176",
-      "TimesJoined": 7,
+      "TimesJoined": 13,
       "Dead": false
     },
     "76561198061394719": {
@@ -27,8 +27,8 @@
     "76561198268071123": {
       "Name": ".John",
       "UserID": "76561198268071123",
-      "TimesJoined": 3,
-      "Dead": true
+      "TimesJoined": 4,
+      "Dead": false
     },
     "76561198108285204": {
       "Name": "skid",
@@ -39,7 +39,73 @@
     "76561198364636201": {
       "Name": "Ripper",
       "UserID": "76561198364636201",
+      "TimesJoined": 2,
+      "Dead": false
+    },
+    "76561198175008134": {
+      "Name": "BlitzKrieger",
+      "UserID": "76561198175008134",
       "TimesJoined": 1,
+      "Dead": false
+    },
+    "76561198105547103": {
+      "Name": "[?] Eragon",
+      "UserID": "76561198105547103",
+      "TimesJoined": 3,
+      "Dead": false
+    },
+    "76561198115220630": {
+      "Name": "Ryan Mills",
+      "UserID": "76561198115220630",
+      "TimesJoined": 2,
+      "Dead": false
+    },
+    "76561197965250097": {
+      "Name": "psyych0",
+      "UserID": "76561197965250097",
+      "TimesJoined": 6,
+      "Dead": false
+    },
+    "76561198272378105": {
+      "Name": "[?] Nebula",
+      "UserID": "76561198272378105",
+      "TimesJoined": 1,
+      "Dead": false
+    },
+    "76561198360024255": {
+      "Name": "We Are Legend",
+      "UserID": "76561198360024255",
+      "TimesJoined": 1,
+      "Dead": false
+    },
+    "76561198212379997": {
+      "Name": "Squash?",
+      "UserID": "76561198212379997",
+      "TimesJoined": 2,
+      "Dead": true
+    },
+    "76561198099098867": {
+      "Name": "[xz] pickLe",
+      "UserID": "76561198099098867",
+      "TimesJoined": 1,
+      "Dead": false
+    },
+    "76561198309487226": {
+      "Name": "[XZ] 포세이큰 csgofast.com",
+      "UserID": "76561198309487226",
+      "TimesJoined": 1,
+      "Dead": false
+    },
+    "76561198386591992": {
+      "Name": "♫ Kas.tk♫",
+      "UserID": "76561198386591992",
+      "TimesJoined": 1,
+      "Dead": false
+    },
+    "76561198816457917": {
+      "Name": "Ryan",
+      "UserID": "76561198816457917",
+      "TimesJoined": 4,
       "Dead": false
     }
   }

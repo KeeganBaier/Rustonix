@@ -1,0 +1,327 @@
+00:00 [Info] [Death Notes] .John was shot in the Head by [?] Eragon with a M249 from 66.76m.
+00:02 [Info] [Death Notes] A Bear followed .John until it finally caught him.
+00:03 [Info] [Death Notes] Squash? used a Rock to knock .John out.
+00:03 [Info] [Death Notes] A Wolf followed We Are Legend until it finally caught him.
+00:04 [Info] [NTeleportation] psyych0 teleported We Are Legend to psyych0.
+00:07 [Info] [NTeleportation] psyych0 teleported Squash? to psyych0.
+00:08 [Info] [Death Notes] Squash? was shredded by We Are Legend's Timed Explosive
+00:08 [Info] [NTeleportation] psyych0 teleported Squash? to psyych0.
+00:18 [Info] [Death Notes] We Are Legend killed a Bear with a Assault Rifle from 3.63m.
+00:20 [Info] [NTeleportation] [Bh0] Bh0WdY teleported [Bh0] Bh0WdY to [Bh0] psyych0.
+00:22 [Info] [NTeleportation] [Bh0] Bh0WdY teleported [Bh0] Bh0WdY to Squash?.
+00:23 [Info] [Death Notes] Squash? was shot in the Head by [Bh0] Bh0WdY with a M249 (Muzzle Brake) from 1.04m.
+00:23 [Info] [NTeleportation] [Bh0] Bh0WdY teleported [Bh0] Bh0WdY to Squash?.
+00:24 [Info] [NTeleportation] [Bh0] Bh0WdY teleported [Bh0] Bh0WdY to [Bh0] psyych0.
+00:24 [Info] [NTeleportation] [Bh0] Bh0WdY teleported Squash? to [Bh0] Bh0WdY.
+00:25 [Info] [Death Notes]  was shot in the Right Forearm by [Bh0] Bh0WdY with a M249 (Muzzle Brake) from 0.82m.
+00:30 [Info] [Death Notes] [Bh0] Bh0WdY was shredded by .John's Timed Explosive
+00:30 [Info] [NTeleportation] [Bh0] Bh0WdY teleported [Bh0] Bh0WdY to .John.
+00:32 [Info] [NTeleportation] [Bh0] Bh0WdY teleported to .John.
+00:34 [Info] [Death Notes] .John was shot in the Head by [Bh0] psyych0 with a Assault Rifle from 2.65m.
+01:29 [Info] [Death Notes] Ripper killed a Boar with a Hunting Bow from 6.05m.
+01:34 [Info] [NTeleportation] [God] Kahrazie teleported to Ripper.
+01:44 [Info] [Death Notes] [xz] pickLe used a Rock to turn Ryan Mills's dream into a nightmare.
+01:44 [Info] [Death Notes] Ripper killed a Wolf with a Hunting Bow from 0.05m.
+01:52 [Info] [Death Notes] Squash? was shot to pieces by a Patrol Helicopter.
+02:00 [Info] [NTeleportation] [Bh0] Bh0WdY teleported Squash? to [Bh0] Bh0WdY.
+02:00 [Info] [NTeleportation] [Bh0] Bh0WdY teleported Squash? to [Bh0] Bh0WdY.
+02:08 [Info] [Death Notes] Squash? was shot in the Lower Spine by [Bh0] Bh0WdY with a M249 (Muzzle Brake) from 34.64m.
+02:08 [Info] [NTeleportation] [Bh0] Bh0WdY teleported Squash? to [Bh0] Bh0WdY.
+02:09 [Info] [Death Notes] Squash? was shot in the Chest by [Bh0] Bh0WdY with a M249 (Muzzle Brake) from 0.87m.
+02:14 [Info] FancyDrop was compiled successfully in 1938ms
+02:14 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+02:14 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+02:14 [Info] [FancyDrop] ...killing 1 SupplyDrops
+02:14 [Info] [FancyDrop] Builtin Airdrop removed
+02:14 [Info] [FancyDrop] Next timed Airdrop in 49 minutes
+02:14 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+02:14 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+02:15 [Info] Loading Oxide Core v2.0.3784...
+02:15 [Info] Loading extensions...
+02:15 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:15 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:15 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:15 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:15 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:15 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:15 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:15 [Info] Using Covalence provider for game 'Rust'
+02:15 [Info] Loading plugins...
+02:15 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:15 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:15 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, FancyDrop, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2283ms
+02:15 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+02:15 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+02:15 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:15 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+02:15 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:15 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+02:15 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:15 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:15 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:15 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:15 [Info] Loaded plugin Kits v3.2.9 by Reneb
+02:15 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:15 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+02:15 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:15 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:15 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:15 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:15 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+02:15 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:15 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:18 [Error] Failed to call hook 'OnServerInitialized' on plugin 'BetterLoot v2.13.1' (JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'ItemListBarrels[4]', line 30, position 4.)
+  at Newtonsoft.Json.JsonTextReader.ParsePostValue () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonReader.Skip () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetExtensionData (Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, Newtonsoft.Json.JsonReader reader, System.String memberName, System.Object o) [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id) [0x00000] in <filename unknown>:0 
+02:18 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+02:18 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+02:18 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+02:18 [Info] [FancyDrop] Builtin Airdrop removed
+02:18 [Info] [FancyDrop] Next timed Airdrop in 35 minutes
+02:18 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+02:18 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+02:18 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+02:18 [Info] Loading Oxide Core v2.0.3784...
+02:18 [Info] Loading extensions...
+02:19 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:19 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:19 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:19 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:19 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:19 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:19 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:19 [Info] Using Covalence provider for game 'Rust'
+02:19 [Info] Loading plugins...
+02:19 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:19 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:19 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, FancyDrop, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2307ms
+02:19 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+02:19 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+02:19 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:19 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+02:19 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:19 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+02:19 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:19 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:19 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:19 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:19 [Info] Loaded plugin Kits v3.2.9 by Reneb
+02:19 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:19 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+02:19 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:19 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:19 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:19 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:19 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+02:19 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:19 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:22 [Error] Failed to call hook 'OnServerInitialized' on plugin 'BetterLoot v2.13.1' (JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'ItemListBarrels[4]', line 30, position 4.)
+  at Newtonsoft.Json.JsonTextReader.ParsePostValue () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonReader.Skip () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetExtensionData (Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, Newtonsoft.Json.JsonReader reader, System.String memberName, System.Object o) [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id) [0x00000] in <filename unknown>:0 
+02:22 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+02:22 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+02:22 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+02:22 [Info] [FancyDrop] Builtin Airdrop removed
+02:22 [Info] [FancyDrop] Next timed Airdrop in 48 minutes
+02:22 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+02:22 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+02:22 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+02:28 [Info] Loading Oxide Core v2.0.3784...
+02:28 [Info] Loading extensions...
+02:28 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:28 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:28 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:28 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:28 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:28 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:28 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:28 [Info] Using Covalence provider for game 'Rust'
+02:28 [Info] Loading plugins...
+02:28 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:28 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:28 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, FancyDrop, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2294ms
+02:28 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+02:28 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+02:28 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:28 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+02:28 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:28 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+02:28 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:28 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:28 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:28 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:28 [Info] Loaded plugin Kits v3.2.9 by Reneb
+02:28 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:28 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+02:28 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:28 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:28 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:28 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:28 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+02:28 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:28 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:31 [Error] Failed to call hook 'OnServerInitialized' on plugin 'BetterLoot v2.13.1' (JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'ItemListBarrels[4]', line 30, position 4.)
+  at Newtonsoft.Json.JsonTextReader.ParsePostValue () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonReader.Skip () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetExtensionData (Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, Newtonsoft.Json.JsonReader reader, System.String memberName, System.Object o) [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id) [0x00000] in <filename unknown>:0 
+02:31 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+02:31 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+02:31 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+02:31 [Info] [FancyDrop] Builtin Airdrop removed
+02:31 [Info] [FancyDrop] Next timed Airdrop in 49 minutes
+02:31 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+02:31 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+02:31 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+02:37 [Info] [NTeleportation] [Bh0] Bh0WdY teleported [Bh0] Bh0WdY to ♫ Kas.tk♫.
+02:37 [Info] [NTeleportation] [Bh0] Bh0WdY teleported to [Bh0] psyych0.
+02:38 [Info] [NTeleportation] [Bh0] Bh0WdY teleported ♫ Kas.tk♫ to [Bh0] Bh0WdY.
+02:50 [Info] Loading Oxide Core v2.0.3784...
+02:50 [Info] Loading extensions...
+02:50 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:50 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+02:50 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+02:50 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+02:50 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+02:50 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+02:50 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+02:50 [Info] Using Covalence provider for game 'Rust'
+02:50 [Info] Loading plugins...
+02:51 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+02:51 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+02:51 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, FancyDrop, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2315ms
+02:51 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+02:51 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+02:51 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+02:51 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+02:51 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+02:51 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+02:51 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+02:51 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+02:51 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+02:51 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+02:51 [Info] Loaded plugin Kits v3.2.9 by Reneb
+02:51 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+02:51 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+02:51 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+02:51 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+02:51 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+02:51 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+02:51 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+02:51 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+02:51 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+02:54 [Error] Failed to call hook 'OnServerInitialized' on plugin 'BetterLoot v2.13.1' (JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'ItemListBarrels[4]', line 30, position 4.)
+  at Newtonsoft.Json.JsonTextReader.ParsePostValue () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonReader.Skip () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetExtensionData (Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, Newtonsoft.Json.JsonReader reader, System.String memberName, System.Object o) [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id) [0x00000] in <filename unknown>:0 
+02:54 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+02:54 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+02:54 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+02:54 [Info] [FancyDrop] Builtin Airdrop removed
+02:54 [Info] [FancyDrop] Next timed Airdrop in 35 minutes
+02:54 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+02:54 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+02:54 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+02:59 [Info] [Death Notes] ♫ Kas.tk♫ was shredded by [Bh0] Bh0WdY's Timed Explosive while sleeping.
+03:16 [Info] [NTeleportation] Kahrazie teleported to Ryan.
+03:17 [Info] [Death Notes] [Bh0] Bh0WdY killed a Bear with a M249 (Holosight | Weapon Lasersight | Muzzle Brake) from 4.82m.
+03:18 [Info] [Stack Size Controller] The Stack Size of all stackable items has been set to 55000
+03:18 [Info] [Stack Size Controller] The Stack Size of all stackable items has been set to 50000
+03:22 [Info] [Stack Size Controller] Updated Stack Size for 5.56 Rifle Ammo (ammo.rifle) to 500.
+03:22 [Info] [Stack Size Controller] Updated Stack Size for Explosive 5.56 Rifle Ammo (ammo.rifle.explosive) to 500.
+03:22 [Info] [Stack Size Controller] Updated Stack Size for HV 5.56 Rifle Ammo (ammo.rifle.hv) to 500.
+03:29 [Info] [FancyDrop] Timed Airdrop incoming at: (529.4, 0.0, -391.4)
+03:29 [Info] [FancyDrop] Next timed Airdrop in 37 minutes
+03:30 [Info] [NTeleportation] [Bh0] Bh0WdY teleported to [Bh0] psyych0.
+03:42 [Info] [NTeleportation] [Bh0] Bh0WdY teleported to [Bh0] psyych0.
+03:59 [Info] [Stack Size Controller] Updated Stack Size for HV Pistol Ammo (ammo.pistol.hv) to 500.
+04:00 [Info] [NTeleportation] Ryan teleported to (750.7, 33.1, 667.2).
+04:00 [Info] [Stack Size Controller] Syntax Error: That is an incorrect item name. Please use a valid shortname.
+04:00 [Info] [Stack Size Controller] Updated Stack Size for Incendiary 5.56 Rifle Ammo (ammo.rifle.incendiary) to 500.
+04:02 [Info] [Stack Size Controller] Syntax Error: That is an incorrect item name. Please use a valid shortname.
+04:02 [Info] [Stack Size Controller] Syntax Error: That is an incorrect item name. Please use a valid shortname.
+04:05 [Info] [NTeleportation] Ryan teleported to [Bh0] psyych0.
+04:06 [Info] [FancyDrop] Timed Airdrop incoming at: (-758.4, 0.0, 724.5)
+04:06 [Info] [FancyDrop] Next timed Airdrop in 43 minutes
+04:07 [Info] [Stack Size Controller] Syntax Error: That is an incorrect item name. Please use a valid shortname.
+04:09 [Info] [Stack Size Controller] Syntax Error: Requires 2 arguments. Syntax Example: stack ammo.rocket.hv 64 (Use shortname)
+04:10 [Info] [NTeleportation] [Bh0] Bh0WdY teleported to [Bh0] psyych0.
+04:13 [Info] BetterLoot was compiled successfully in 1997ms
+04:13 [Info] Unloaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+04:13 [Error] Failed to call hook 'OnServerInitialized' on plugin 'BetterLoot v2.13.1' (JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'ItemListBarrels[4]', line 30, position 4.)
+  at Newtonsoft.Json.JsonTextReader.ParsePostValue () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonReader.Skip () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetExtensionData (Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, Newtonsoft.Json.JsonReader reader, System.String memberName, System.Object o) [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id) [0x00000] in <filename unknown>:0 
+04:13 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+04:14 [Info] Loading Oxide Core v2.0.3784...
+04:14 [Info] Loading extensions...
+04:14 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+04:14 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+04:14 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+04:14 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+04:14 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+04:14 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+04:14 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+04:14 [Info] Using Covalence provider for game 'Rust'
+04:14 [Info] Loading plugins...
+04:14 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+04:14 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+04:14 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, FancyDrop, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2279ms
+04:14 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+04:14 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+04:14 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+04:14 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+04:14 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+04:14 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+04:14 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+04:14 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+04:14 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+04:14 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+04:14 [Info] Loaded plugin Kits v3.2.9 by Reneb
+04:14 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+04:14 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+04:14 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+04:14 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+04:14 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+04:14 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+04:14 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+04:14 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+04:14 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+04:18 [Error] Failed to call hook 'OnServerInitialized' on plugin 'BetterLoot v2.13.1' (JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'ItemListBarrels[4]', line 30, position 4.)
+  at Newtonsoft.Json.JsonTextReader.ParsePostValue () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.JsonReader.Skip () [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetExtensionData (Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, Newtonsoft.Json.JsonReader reader, System.String memberName, System.Object o) [0x00000] in <filename unknown>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id) [0x00000] in <filename unknown>:0 
+04:18 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+04:18 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+04:18 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+04:18 [Info] [FancyDrop] Builtin Airdrop removed
+04:18 [Info] [FancyDrop] Next timed Airdrop in 40 minutes
+04:18 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+04:18 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+04:18 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+04:18 [Info] [NTeleportation] [Bh0] Bh0WdY teleported to [Bh0] psyych0.
+04:22 [Info] [NTeleportation] Kahrazie teleported to (997.0, 21.9, -184.0).
+04:24 [Info] [Stack Size Controller] Syntax Error: That is an incorrect item name. Please use a valid shortname.
+04:24 [Info] [Stack Size Controller] Syntax Error: Requires 2 arguments. Syntax Example: stack ammo.rocket.hv 64 (Use shortname)
+04:24 [Info] [Stack Size Controller] Syntax Error: Requires 2 arguments. Syntax Example: stack ammo.rocket.hv 64 (Use shortname)
+04:25 [Info] [Stack Size Controller] Syntax Error: That is an incorrect item name. Please use a valid shortname.
+04:25 [Info] Player 'Bh0WdY(76561198080306176)' added to group: admin
+04:25 [Info] [Death Notes] Sleeping [?] Eragon was shot in the Lower Spine by [Bh0] Bh0WdY with a M249 (Holosight | Weapon Lasersight | Muzzle Brake) from 29.83m.
+04:26 [Info] Group 'admin' granted permission 'bgrade.all'
+04:26 [Info] Usage: grant <group|user> <name|id> <permission>
+04:27 [Info] Multiple players were found, please specify: Ryan Mills, Ryan
+04:27 [Info] Multiple players were found, please specify: Ryan Mills, Ryan
+04:27 [Info] Player 'Ryan (76561198816457917)' granted permission 'bgrade.all'

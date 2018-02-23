@@ -653,3 +653,296 @@
 03:47 [Info] [FancyDrop] WudupBroski (76561198061394719) looted the Drop at: (-485.8, 24.3, 511.4)
 03:50 [Info] [Death Notes] SirParth killed a Horse with a Bolt Action Rifle from 83.05m.
 03:50 [Info] [Death Notes] SirParth killed a Horse with a Bolt Action Rifle from 127.74m.
+04:01 [Info] NoEscape was compiled successfully in 1907ms
+04:01 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+04:01 [Info] Kits was compiled successfully in 1848ms
+04:01 [Info] Loaded plugin Kits v3.2.9 by Reneb
+04:01 [Info] BGrade was compiled successfully in 1816ms
+04:01 [Warning] [BGrade] Generating default configuration file...
+04:01 [Warning] [BGrade] Updated configuration file with new/changed values.
+04:01 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+04:01 [Info] CraftingController was compiled successfully in 1705ms
+04:01 [Warning] [Crafting Controller] New configuration file created.
+04:01 [Info] [Crafting Controller] Configuration file updated.
+04:01 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+04:01 [Info] [NTeleportation] Bh0WdY teleported Bh0WdY to WudupBroski.
+04:07 [Info] [FancyDrop] Bh0WdY (76561198080306176) looted the Drop at: (-525.2, 29.8, 518.0)
+04:08 [Info] [Death Notes] WudupBroski was shredded by Bh0WdY's F1 Grenade
+04:08 [Info] [NTeleportation] Bh0WdY teleported WudupBroski to Bh0WdY.
+04:13 [Info] [NTeleportation] Bh0WdY teleported Bh0WdY to WudupBroski.
+04:13 [Info] [Death Notes] Bh0WdY had enough of life.
+04:13 [Info] [NTeleportation] Bh0WdY teleported Bh0WdY to WudupBroski.
+04:23 [Info] Loading Oxide Core v2.0.3784...
+04:23 [Info] Loading extensions...
+04:23 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+04:23 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+04:23 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+04:23 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+04:23 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+04:23 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+04:23 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+04:23 [Info] Using Covalence provider for game 'Rust'
+04:23 [Info] Loading plugins...
+04:23 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+04:23 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+04:23 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, FancyDrop, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2265ms
+04:23 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+04:23 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+04:23 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+04:23 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+04:23 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+04:23 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+04:23 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+04:23 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+04:23 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+04:23 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+04:23 [Info] Loaded plugin Kits v3.2.9 by Reneb
+04:23 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+04:23 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+04:23 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+04:23 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+04:23 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+04:23 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+04:23 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+04:23 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+04:23 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+04:27 [Info] [BetterLoot] Updating internals ...
+04:27 [Info] [BetterLoot] There are 37 items in the global Barrels LootTable.
+04:27 [Info] [BetterLoot] There are 37 items in the global Crates LootTable.
+04:27 [Info] [BetterLoot] There are 43 items in the HeliTable.
+04:27 [Info] [BetterLoot] There are 122 items in the SupplyTable.
+04:27 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+04:27 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+04:27 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+04:27 [Info] [FancyDrop] Builtin Airdrop removed
+04:27 [Info] [FancyDrop] Next timed Airdrop in 39 minutes
+04:27 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+04:27 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+04:27 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+04:27 [Info] [BetterLoot] Removed 4 stacked LootContainer (out of 1096)
+04:27 [Info] [BetterLoot] Internals have been updated. Populated '766' supported containers.
+14:39 [Info] Loading Oxide Core v2.0.3784...
+14:39 [Info] Loading extensions...
+14:39 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+14:39 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+14:39 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+14:39 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+14:39 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+14:39 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+14:39 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+14:39 [Info] Using Covalence provider for game 'Rust'
+14:39 [Info] Loading plugins...
+14:39 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+14:39 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+14:39 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, FancyDrop, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2338ms
+14:39 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+14:39 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+14:39 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+14:39 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+14:39 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+14:39 [Info] Loaded plugin FancyDrop v2.7.1 by Fujikura
+14:39 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+14:39 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+14:39 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+14:39 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+14:39 [Info] Loaded plugin Kits v3.2.9 by Reneb
+14:39 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+14:39 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+14:39 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+14:39 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+14:39 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+14:39 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+14:39 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+14:39 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+14:39 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+14:43 [Info] [BetterLoot] Updating internals ...
+14:43 [Info] [BetterLoot] There are 37 items in the global Barrels LootTable.
+14:43 [Info] [BetterLoot] There are 37 items in the global Crates LootTable.
+14:43 [Info] [BetterLoot] There are 43 items in the HeliTable.
+14:43 [Info] [BetterLoot] There are 122 items in the SupplyTable.
+14:43 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+14:43 [Info] [FancyDrop] Map Highest Point: (500m) | Plane flying height: (~500m)
+14:43 [Info] [FancyDrop] Timed Airdrop activated with '2' players between '30' and '50' minutes
+14:43 [Info] [FancyDrop] Builtin Airdrop removed
+14:43 [Info] [FancyDrop] Next timed Airdrop in 38 minutes
+14:43 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+14:43 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+14:43 [Info] [FancyDrop] '4' custom loot tables loaded with overall '112' items
+14:43 [Info] [BetterLoot] No stacked LootContainer found.
+14:43 [Info] [BetterLoot] Internals have been updated. Populated '268' supported containers.
+15:01 [Info] Unloaded plugin FancyDrop v2.7.1 by Fujikura
+15:01 [Info] Unloaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+15:02 [Info] Loading Oxide Core v2.0.3784...
+15:02 [Info] Loading extensions...
+15:02 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:02 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:02 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+15:02 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+15:02 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+15:02 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+15:02 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+15:02 [Info] Using Covalence provider for game 'Rust'
+15:02 [Info] Loading plugins...
+15:02 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+15:02 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+15:02 [Info] BGrade, Clans, CraftingController, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2253ms
+15:02 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+15:02 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+15:02 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+15:02 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+15:02 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+15:02 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+15:02 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+15:02 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+15:02 [Info] Loaded plugin Kits v3.2.9 by Reneb
+15:02 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+15:02 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+15:02 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+15:02 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+15:02 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+15:02 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+15:02 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+15:02 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+15:02 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+15:04 [Info] Loading Oxide Core v2.0.3784...
+15:04 [Info] Loading extensions...
+15:04 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:04 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:04 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+15:04 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+15:04 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+15:04 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+15:04 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+15:04 [Info] Using Covalence provider for game 'Rust'
+15:04 [Info] Loading plugins...
+15:04 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+15:04 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+15:04 [Info] BGrade, Clans, CraftingController, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2271ms
+15:04 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+15:04 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+15:04 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+15:04 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+15:04 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+15:04 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+15:04 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+15:04 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+15:04 [Info] Loaded plugin Kits v3.2.9 by Reneb
+15:04 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+15:04 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+15:04 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+15:04 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+15:04 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+15:04 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+15:04 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+15:04 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+15:04 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+15:09 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+15:09 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+15:09 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+15:15 [Info] [Death Notes] A Bear followed Kahrazie until it finally caught him.
+15:20 [Info] BetterLoot was compiled successfully in 1884ms
+15:20 [Info] [BetterLoot] No Blacklist found, creating new file...
+15:20 [Info] [BetterLoot] HeliCrate > table not found, option disabled by 'includeHeliCrate' > Creating a new file.
+15:20 [Info] [BetterLoot] SupplyDrop > table not found, option disabled by 'includeSupplyDrop' > Creating a new file.
+15:20 [Info] [BetterLoot] Updating internals ...
+15:20 [Info] [BetterLoot] There are 37 items in the global Barrels LootTable.
+15:20 [Info] [BetterLoot] There are 37 items in the global Crates LootTable.
+15:20 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+15:20 [Info] [BetterLoot] Exported 377 items to 'NamesList'
+15:20 [Info] [BetterLoot] Removed 3 stacked LootContainer (out of 1433)
+15:20 [Info] [BetterLoot] Internals have been updated. Populated '1057' supported containers.
+15:20 [Info] Loading Oxide Core v2.0.3784...
+15:20 [Info] Loading extensions...
+15:20 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:20 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:20 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+15:20 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+15:20 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+15:20 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+15:20 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+15:20 [Info] Using Covalence provider for game 'Rust'
+15:20 [Info] Loading plugins...
+15:20 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+15:20 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+15:20 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2245ms
+15:20 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+15:20 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+15:20 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+15:20 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+15:20 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+15:20 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+15:20 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+15:20 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+15:20 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+15:20 [Info] Loaded plugin Kits v3.2.9 by Reneb
+15:20 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+15:20 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+15:20 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+15:20 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+15:20 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+15:20 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+15:20 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+15:20 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+15:20 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+15:21 [Info] Loading Oxide Core v2.0.3784...
+15:21 [Info] Loading extensions...
+15:21 [Info] Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:21 [Info] Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+15:21 [Info] Loaded extension CSharp v2.0.3788 by Oxide and Contributors
+15:21 [Info] Loaded extension MySql v2.0.3752 by Oxide and Contributors
+15:21 [Info] Loaded extension Rust v2.0.3831 by Oxide and Contributors
+15:21 [Info] Loaded extension SQLite v2.0.3752 by Oxide and Contributors
+15:21 [Info] Loaded extension Unity v2.0.3751 by Oxide and Contributors
+15:21 [Info] Using Covalence provider for game 'Rust'
+15:21 [Info] Loading plugins...
+15:21 [Info] Loaded plugin Rust v2.0.3831 by Oxide and Contributors
+15:21 [Info] Loaded plugin Unity v2.0.3751 by Oxide and Contributors
+15:21 [Info] BGrade, BetterLoot, Clans, CraftingController, DeathNotes, GUIAnnouncements, GatherManager, Godmode, HeliControl, Kits, NTeleportation, NoEscape, PrivateMessage, QuickSmelt, RemoverTool, SharedDoors, StackSizeController, TimeOfDay and Vanish were compiled successfully in 2267ms
+15:21 [Info] Loaded plugin BGrade v1.0.46 by Ryan
+15:21 [Info] Loaded plugin BetterLoot v2.13.1 by Fujikura/dcode
+15:21 [Info] Loaded plugin Rust:IO Clans v1.7.3 by playrust.io / dcode
+15:21 [Info] Loaded plugin Crafting Controller v2.4.7 by Mughisi
+15:21 [Info] Loaded plugin Death Notes v5.2.19 by LaserHydra
+15:21 [Info] Loaded plugin GUIAnnouncements v1.23.83 by JoeSheep
+15:21 [Info] Loaded plugin Gathering Manager v2.2.6 by Mughisi
+15:21 [Info] Loaded plugin Godmode v4.1.1 by Wulf/lukespragg
+15:21 [Info] Loaded plugin HeliControl v1.2.6 by Shady
+15:21 [Info] Loaded plugin Kits v3.2.9 by Reneb
+15:21 [Info] Loaded plugin NTeleportation v1.0.25 by Nogrod
+15:21 [Info] Loaded plugin NoEscape v2.0.2 by rustservers.io
+15:21 [Info] Loaded plugin PrivateMessage v2.0.2 by Nogrod
+15:21 [Info] Loaded plugin QuickSmelt v3.1.0 by Wulf/Fujikura
+15:21 [Info] Loaded plugin RemoverTool v4.2.9 by Reneb/Fuji
+15:21 [Info] Loaded plugin SharedDoors v0.7.8 by dbteku
+15:21 [Info] Loaded plugin Stack Size Controller v1.9.9 by Canopy Sheep
+15:21 [Info] Loaded plugin TimeOfDay v2.3.2 by Fujikura
+15:21 [Info] Loaded plugin Vanish v0.5.1 by Wulf/lukespragg (maintained by Jake_Rich)
+15:26 [Info] [BetterLoot] HeliCrate > 'useCustomTableHeli' enabled, but loot population inactive by 'includeHeliCrate'
+15:26 [Info] [BetterLoot] SupplyDrop > 'useCustomTableSupply' enabled, but loot population inactive by 'includeSupplyDrop'
+15:26 [Info] [BetterLoot] Updating internals ...
+15:26 [Info] [BetterLoot] There are 37 items in the global Barrels LootTable.
+15:26 [Info] [BetterLoot] There are 37 items in the global Crates LootTable.
+15:26 [Info] [Rust:IO Clans] Rust:IO is not present. You need to install Rust:IO first in order to use this plugin!
+15:26 [Info] [RemoverTool] RemoverTool: Rust:IO is not present. You need to install Rust:IO first in order to use the RustIO option!
+15:26 [Info] [SharedDoors] SharedDoors now hooking to Rust:IO Clans
+15:26 [Info] [BetterLoot] Removed 4 stacked LootContainer (out of 1114)
+15:26 [Info] [BetterLoot] Internals have been updated. Populated '804' supported containers.
+22:31 [Info] [NTeleportation] Bh0WdY teleported [?] Eragon to Bh0WdY.
+22:35 [Info] [NTeleportation] Bh0WdY teleported [?] Eragon to Bh0WdY.
+22:35 [Info] [NTeleportation] Bh0WdY teleported Ryan Mills to Bh0WdY.
+22:39 [Info] [NTeleportation] Bh0WdY teleported psyych0 to Bh0WdY.
+22:42 [Info] [Death Notes] [?] Eragon killed a Wolf with a M249 from 19.08m.
+22:43 [Info] [NTeleportation] Bh0WdY teleported psyych0 to Bh0WdY.
+22:44 [Info] [Death Notes] [?] Eragon was shot in the Jaw by Ryan Mills with a M249 from 25.66m.
+22:47 [Info] [Death Notes] [?] Eragon was shot in the Right Hand by Ryan Mills with a M249 from 10.19m.
+22:53 [Info] [Death Notes] Ryan Mills killed a Wolf with a M249 from 27.18m.
+22:53 [Info] [NTeleportation] Bh0WdY teleported Ryan Mills to Bh0WdY.
+23:01 [Info] [NTeleportation] Bh0WdY teleported [?] Eragon to Bh0WdY.
+23:07 [Info] [NTeleportation] Bh0WdY teleported Ryan Mills to Bh0WdY.
+23:08 [Info] [Death Notes] Sleeping Ryan Mills was shot in the Head by Bh0WdY with a M249 (Muzzle Brake) from 2.05m.
+23:48 [Info] Player 'psyych0(76561197965250097)' added to group: admin
+23:48 [Info] Multiple players were found, please specify: [?] Eragon, [?] Nebula
+23:49 [Info] Player '[?] Eragon(76561198105547103)' added to group: admin
+23:52 [Info] Permission 'noclip' doesn't exist
+23:52 [Info] [Death Notes] A Bear followed We Are Legend until it finally caught him.
+23:58 [Info] Player 'psyych0 (76561197965250097)' granted permission 'bgrade.all'

@@ -20,7 +20,7 @@
     "BlockedItems": [],
     "CompleteCurrentCraftingOnShutdown": false,
     "CraftingExperienceRate": 100.0,
-    "CraftingRate": 100.0,
+    "CraftingRate": 0.0,
     "IndividualCraftingRates": {},
     "InstantCraftForAdmins": true,
     "InstantCraftForModerators": false
