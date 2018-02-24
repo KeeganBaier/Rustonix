@@ -129,6 +129,7 @@ namespace Oxide.Plugins
 
 		Dictionary<string,object> rarityItemOverride = null;
 
+		// Retreives configuration and returns the json config as an obj.
 		object GetConfig(string menu, string datavalue, object defaultValue)
 		{
 			var data = Config[menu] as Dictionary<string, object>;
@@ -148,6 +149,7 @@ namespace Oxide.Plugins
 			return value;
 		}
 
+		// Get the configs for each loot entity, default values if config is not set.
 		void LoadVariables()
 		{
 			rarityItemOverride = (Dictionary<string, object>)GetConfig("Rarity", "Override", defaultItemOverride());
@@ -199,6 +201,7 @@ namespace Oxide.Plugins
 			Changed = false;
 		}
 
+		// Clears existing config and replaces it with default values.
 		protected override void LoadDefaultConfig()
 		{
 			Config.Clear();
@@ -207,6 +210,7 @@ namespace Oxide.Plugins
 
 		#endregion Config
 
+		// Define a weapon ammo dict attaching the entity names.
 		Dictionary<string, string> weaponAmmunition = new Dictionary<string, string>()
 		{
 			{ "bow.hunting", "arrow.wooden" },
@@ -227,12 +231,14 @@ namespace Oxide.Plugins
 			{ "smg.mp5", "ammo.pistol" }
 		};
 
+		// Initalize the plugin with default values and a timestamp.
 		void Init()
 		{
 			LoadVariables();
 			lastMinute = DateTime.UtcNow.Minute;
 		}
 
+		// When the server is initialized, retrieve the Item List.
 		void OnServerInitialized()
 		{
 			if (initialized)
@@ -246,6 +252,7 @@ namespace Oxide.Plugins
 			UpdateInternals(listUpdatesOnLoaded);
 		}
 
+		// Identifies all loot containers and will attempt to spawn the loot containers.
 		void Unload()
         {
             var lootContainers = Resources.FindObjectsOfTypeAll<LootContainer>().Where(c => c.isActiveAndEnabled && !c.IsInvoking("SpawnLoot")).ToList();
@@ -255,6 +262,7 @@ namespace Oxide.Plugins
 			}
         }
 
+		// Refreshes loot containers for a given time.
 		void OnTick()
 		{
 			if (lastMinute == DateTime.UtcNow.Minute) return;
@@ -290,6 +298,7 @@ namespace Oxide.Plugins
 					if (listUpdatesOnRefresh) Puts("Refreshed " + n + " containers");
 		}
 
+		// Applies the configured loot tables to the loot containers.
 		void UpdateInternals(bool doLog)
 		{
 			LoadBlacklist();
@@ -301,6 +310,7 @@ namespace Oxide.Plugins
 			LoadHeliCrate();
 			LoadApcCrate();
 			LoadSupplyDrop();
+
 			timer.Once(0.1f, SaveExportNames);
 			if (Changed)
 			{
@@ -328,10 +338,12 @@ namespace Oxide.Plugins
 			originalItemsApc = new List<ItemDefinition>();
 			originalItemsSupply = new List<ItemDefinition>();
 
+			// Gather the original items for the loot containers.
 			if (seperateLootTables)
 			{
 				foreach (KeyValuePair<string, int> pair in separateLootTable.ItemListBarrels)
 					originalItemsB.Add(ItemManager.FindItemDefinition(pair.Key));
+
 				foreach (KeyValuePair<string, int> pair in separateLootTable.ItemListCrates)
 					originalItemsC.Add(ItemManager.FindItemDefinition(pair.Key));
 			}
@@ -370,7 +382,10 @@ namespace Oxide.Plugins
 				if (useCustomTableSupply && includeSupplyDrop)
 					Puts("There are " + originalItemsSupply.Count + " items in the SupplyTable.");
 			}
-			for (var i = 0; i < 5; ++i)
+
+			// Init the new item lists for the loot containers.
+			// TODO: Change 6 index to the detect all of the configurable options.
+			for (var i = 0; i < 6; ++i)
 			{
 				if (seperateLootTables)
 				{
@@ -384,6 +399,8 @@ namespace Oxide.Plugins
 				if (useCustomTableApc && includeApcCrate) itemsApc[i] = new List<string>();
 				if (useCustomTableSupply && includeSupplyDrop) itemsSupply[i] = new List<string>();
 			}
+
+			// Init item counts
 			if (seperateLootTables)
 			{
 				totalItemsB = 0;
@@ -404,6 +421,7 @@ namespace Oxide.Plugins
 			var notExistingItemsApc = 0;
 			var notExistingItemsSupply = 0;
 
+			// Apply rarity to certain items.
 			foreach (var rarity in rarityItemOverride.ToList())
 			{
 				int check = Convert.ToInt32(rarityItemOverride[rarity.Key]);
@@ -412,6 +430,7 @@ namespace Oxide.Plugins
 				rarityItemOverride[rarity.Key] = check;
 			}
 
+			// Apply the new loot tables to the loot containers.
 			if (seperateLootTables)
 			{
 				foreach (var item in originalItemsB)
@@ -541,7 +560,9 @@ namespace Oxide.Plugins
 			totalItemWeightHeli = 0;
 			totalItemWeightApc = 0;
 			totalItemWeightSupply = 0;
-			for (var i = 0; i < 5; ++i) {
+
+			// TODO: Change 6 index to the detect all of the configurable options.
+			for (var i = 0; i < 6; ++i) {
 				if (seperateLootTables)
 				{
 					totalItemWeightB += (itemWeightsB[i] = ItemWeight(baseItemRarity, i) * itemsB[i].Count);
@@ -639,7 +660,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeight);
-									for (var i=0; i<5; ++i) {
+									for (var i=0; i<6; ++i) {
 										limit += itemWeights[i];
 										if (r < limit) {
 											selectFrom = items[i];
@@ -681,7 +702,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightC);
-									for (var i=0; i<5; ++i) {
+									for (var i=0; i<6; ++i) {
 										limit += itemWeightsC[i];
 										if (r < limit) {
 											selectFrom = itemsC[i];
@@ -723,7 +744,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightB);
-									for (var i=0; i<5; ++i) {
+									for (var i=0; i<6; ++i) {
 										limit += itemWeightsB[i];
 										if (r < limit) {
 											selectFrom = itemsB[i];
@@ -765,7 +786,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightHeli);
-									for (var i=0; i<5; ++i) {
+									for (var i=0; i<6; ++i) {
 										limit += itemWeightsHeli[i];
 										if (r < limit) {
 											selectFrom = itemsHeli[i];
@@ -807,7 +828,7 @@ namespace Oxide.Plugins
 										selectFrom = null;
 										item = null;
 										var r = rng.Next(totalItemWeightApc);
-										for (var i=0; i<5; ++i) {
+										for (var i=0; i<6; ++i) {
 											limit += itemWeightsApc[i];
 											if (r < limit) {
 												selectFrom = itemsApc[i];
@@ -849,7 +870,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightSupply);
-									for (var i=0; i<5; ++i) {
+									for (var i=0; i<6; ++i) {
 										limit += itemWeightsSupply[i];
 										if (r < limit) {
 											selectFrom = itemsSupply[i];
