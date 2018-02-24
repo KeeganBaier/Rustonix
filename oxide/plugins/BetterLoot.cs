@@ -12,7 +12,7 @@ using Oxide.Core;
 
 namespace Oxide.Plugins
 {
-	[Info("BetterLoot", "Kahrazie/Chase", "3.0", ResourceId = 828)]
+	[Info("BetterLoot", "Chase", "3.0", ResourceId = 828)]
 	[Description("BetterLoot updated and enhanced.")]
 	public class BetterLoot : RustPlugin
 	{
