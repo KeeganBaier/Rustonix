@@ -385,7 +385,7 @@ namespace Oxide.Plugins
 
 			// Init the new item lists for the loot containers.
 			// TODO: Change 6 index to the detect all of the configurable options.
-			for (var i = 0; i < 6; ++i)
+			for (var i = 0; i < 5; ++i)
 			{
 				if (seperateLootTables)
 				{
@@ -562,7 +562,7 @@ namespace Oxide.Plugins
 			totalItemWeightSupply = 0;
 
 			// TODO: Change 6 index to the detect all of the configurable options.
-			for (var i = 0; i < 6; ++i) {
+			for (var i = 0; i < 5; ++i) {
 				if (seperateLootTables)
 				{
 					totalItemWeightB += (itemWeightsB[i] = ItemWeight(baseItemRarity, i) * itemsB[i].Count);
