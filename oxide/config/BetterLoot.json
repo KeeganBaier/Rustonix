@@ -1,6 +1,6 @@
 {
   "Barrel": {
-    "barrelTypes": "loot-barrel|loot_barrel|loot_trash|loot_barrel_1|loot_barrel_2|oil_barrel",
+    "barrelTypes": "loot-barrel|loot_barrel|loot_trash",
     "enableBarrels": true,
     "enforceBlacklist": true,
     "maxItemsPerBarrel": 4,
@@ -9,7 +9,7 @@
     "refreshBarrels": false
   },
   "Crate": {
-    "crateTypes": "crate_normal|crate_tools|crate_elite|crate_mine|minecart|crate_basic|bradley_crate|crate_normal_2_medical|crate_normal_2_food|crate_normal_2|foodbox",
+    "crateTypes": "crate_normal|crate_tools",
     "enableCrates": true,
     "enforceBlacklist": true,
     "maxItemsPerCrate": 6,
@@ -35,6 +35,14 @@
     "minItemsPerHeliCrate": 2,
     "randomAmountHeliCrate": true,
     "useCustomTableHeli": true
+  },
+  "ApcCrate": {
+    "includeApcCrate": false,
+    "enforceBlacklist": true,
+    "maxItemsPerApcCrate": 6,
+    "minItemsPerApcCrate": 3,
+    "randomAmountApcCrate": true,
+    "useCustomTableApc": true
   },
   "Rarity": {
     "Override": {
