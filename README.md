@@ -10,3 +10,6 @@
 - Move the oxide plugins (pulled from this repository) to replace that directory
 - Restart the Server
 - Connect to the server by launching the Rust Client, F1, client.connect localhost:28015
+
+# Issue Tracking
+https://trello.com/b/E23uwXsa/rustonix

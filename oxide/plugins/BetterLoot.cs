@@ -12,8 +12,8 @@ using Oxide.Core;
 
 namespace Oxide.Plugins
 {
-	[Info("BetterLoot", "Fujikura/dcode", "2.13.1", ResourceId = 828)]
-	[Description("A complete re-implementation of the drop system")]
+	[Info("BetterLoot", "Kahrazie/Chase", "3.0", ResourceId = 828)]
+	[Description("BetterLoot updated and enhanced.")]
 	public class BetterLoot : RustPlugin
 	{
 		[PluginReference]
@@ -24,6 +24,7 @@ namespace Oxide.Plugins
 
 		StoredSupplyDrop storedSupplyDrop = new StoredSupplyDrop();
 		StoredHeliCrate storedHeliCrate = new StoredHeliCrate();
+		StoredApcCrate storedApcCrate = new StoredApcCrate();
 		StoredExportNames storedExportNames = new StoredExportNames();
 		StoredLootTable storedLootTable = new StoredLootTable();
 		SeparateLootTable separateLootTable = new SeparateLootTable();
@@ -34,32 +35,38 @@ namespace Oxide.Plugins
 		Regex barrelEx;
 		Regex crateEx;
 		Regex heliEx = new Regex(@"heli_crate");
+		Regex apcEx = new Regex(@"bradley_crate");
 
 		List<string>[] items = new List<string>[5];
 		List<string>[] itemsB = new List<string>[5];
 		List<string>[] itemsC = new List<string>[5];
 		List<string>[] itemsHeli = new List<string>[5];
+		List<string>[] itemsApc = new List<string>[5];
 		List<string>[] itemsSupply = new List<string>[5];
 		int totalItems;
 		int totalItemsB;
 		int totalItemsC;
 		int totalItemsHeli;
+		int totalItemsApc;
 		int totalItemsSupply;
 		int[] itemWeights = new int[5];
 		int[] itemWeightsB = new int[5];
 		int[] itemWeightsC = new int[5];
 		int[] itemWeightsHeli = new int[5];
+		int[] itemWeightsApc = new int[5];
 		int[] itemWeightsSupply = new int[5];
 		int totalItemWeight;
 		int totalItemWeightB;
 		int totalItemWeightC;
 		int totalItemWeightHeli;
+		int totalItemWeightApc;
 		int totalItemWeightSupply;
 
 		List<ItemDefinition> originalItems;
 		List<ItemDefinition> originalItemsB;
 		List<ItemDefinition> originalItemsC;
 		List<ItemDefinition> originalItemsHeli;
+		List<ItemDefinition> originalItemsApc;
 		List<ItemDefinition> originalItemsSupply;
 
 		Random rng = new Random();
@@ -99,6 +106,8 @@ namespace Oxide.Plugins
 		int maxItemsPerSupplyDrop;
 		int minItemsPerHeliCrate;
 		int maxItemsPerHeliCrate;
+		int minItemsPerApcCrate;
+		int maxItemsPerApcCrate;
 		double baseItemRarity = 2;
 		int refreshMinutes;
 		bool removeStackedContainers;
@@ -108,9 +117,12 @@ namespace Oxide.Plugins
 		bool randomAmountSupplyDrop;
 		bool includeHeliCrate;
 		bool randomAmountHeliCrate;
+		bool includeApcCrate;
+		bool randomAmountApcCrate;
 		bool listUpdatesOnLoaded;
 		bool listUpdatesOnRefresh;
 		bool useCustomTableHeli;
+		bool useCustomTableApc;
 		bool useCustomTableSupply;
 		bool refreshBarrels;
 		bool refreshCrates;
@@ -143,14 +155,14 @@ namespace Oxide.Plugins
 			minItemsPerBarrel =  Convert.ToInt32(GetConfig("Barrel", "minItemsPerBarrel", 1));
 			maxItemsPerBarrel = Convert.ToInt32(GetConfig("Barrel", "maxItemsPerBarrel", 3));
 			refreshBarrels = Convert.ToBoolean(GetConfig("Barrel", "refreshBarrels", false));
-			barrelTypes = Convert.ToString(GetConfig("Barrel","barrelTypes","loot-barrel|loot_barrel|loot_trash|loot_barrel_1|loot_barrel_2|oil_barrel"));
+			barrelTypes = Convert.ToString(GetConfig("Barrel","barrelTypes","loot-barrel|loot_barrel|loot_trash"));
 			enableBarrels = Convert.ToBoolean(GetConfig("Barrel", "enableBarrels", true));
 			randomAmountBarrels = Convert.ToBoolean(GetConfig("Barrel", "randomAmountBarrels", true));
 
 			minItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "minItemsPerCrate", 3));
 			maxItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "maxItemsPerCrate", 6));
 			refreshCrates = Convert.ToBoolean(GetConfig("Crate", "refreshCrates", true));
-			crateTypes = Convert.ToString(GetConfig("Crate","crateTypes","crate_normal|crate_tools|crate_elite|crate_mine|minecart|crate_basic|bradley_crate|crate_normal_2_medical|crate_normal_2_food|crate_normal_2|foodbox"));
+			crateTypes = Convert.ToString(GetConfig("Crate","crateTypes","crate_normal|crate_tools"));
 			enableCrates = Convert.ToBoolean(GetConfig("Crate", "enableCrates", true));
 			randomAmountCrates = Convert.ToBoolean(GetConfig("Crate", "randomAmountCrates", true));
 
@@ -165,6 +177,12 @@ namespace Oxide.Plugins
 			includeHeliCrate = Convert.ToBoolean(GetConfig("HeliCrate", "includeHeliCrate", false));
 			useCustomTableHeli = Convert.ToBoolean(GetConfig("HeliCrate", "useCustomTableHeli", true));
 			randomAmountHeliCrate = Convert.ToBoolean(GetConfig("HeliCrate", "randomAmountHeliCrate", true));
+
+			minItemsPerApcCrate = Convert.ToInt32(GetConfig("ApcCrate", "minItemsPerApcCrate", 4));
+			maxItemsPerApcCrate = Convert.ToInt32(GetConfig("ApcCrate", "maxItemsPerApcCrate", 6));
+			includeApcCrate = Convert.ToBoolean(GetConfig("ApcCrate", "includeApcCrate", false));
+			useCustomTableApc = Convert.ToBoolean(GetConfig("ApcCrate", "useCustomTableApc", true));
+			randomAmountApcCrate = Convert.ToBoolean(GetConfig("ApcCrate", "randomAmountApcCrate", true));
 
 			refreshMinutes = Convert.ToInt32(GetConfig("Generic", "refreshMinutes", 30));
 			enforceBlacklist = Convert.ToBoolean(GetConfig("Generic", "enforceBlacklist", false));
@@ -279,7 +297,9 @@ namespace Oxide.Plugins
 				LoadSeparateLootTable();
 			else
 				LoadLootTable();
+
 			LoadHeliCrate();
+			LoadApcCrate();
 			LoadSupplyDrop();
 			timer.Once(0.1f, SaveExportNames);
 			if (Changed)
@@ -305,6 +325,7 @@ namespace Oxide.Plugins
 				originalItems = new List<ItemDefinition>();
 
 			originalItemsHeli = new List<ItemDefinition>();
+			originalItemsApc = new List<ItemDefinition>();
 			originalItemsSupply = new List<ItemDefinition>();
 
 			if (seperateLootTables)
@@ -321,6 +342,11 @@ namespace Oxide.Plugins
 			if (useCustomTableHeli && includeHeliCrate)
 				foreach (KeyValuePair<string, int> pair in storedHeliCrate.ItemList)
 					originalItemsHeli.Add(ItemManager.FindItemDefinition(pair.Key));
+
+			if (useCustomTableApc && includeApcCrate)
+				foreach (KeyValuePair<string, int> pair in storedApcCrate.ItemList)
+					originalItemsApc.Add(ItemManager.FindItemDefinition(pair.Key));
+
 			if (useCustomTableSupply && includeSupplyDrop)
 				foreach (KeyValuePair<string, int> pair in storedSupplyDrop.ItemList)
 					originalItemsSupply.Add(ItemManager.FindItemDefinition(pair.Key));
@@ -337,6 +363,10 @@ namespace Oxide.Plugins
 
 				if (useCustomTableHeli && includeHeliCrate)
 					Puts("There are " + originalItemsHeli.Count + " items in the HeliTable.");
+
+				if (useCustomTableApc && includeApcCrate)
+					Puts("There are " + originalItemsApc.Count + " items in the ApcTable.");
+
 				if (useCustomTableSupply && includeSupplyDrop)
 					Puts("There are " + originalItemsSupply.Count + " items in the SupplyTable.");
 			}
@@ -351,6 +381,7 @@ namespace Oxide.Plugins
 					items[i] = new List<string>();
 
 				if (useCustomTableHeli && includeHeliCrate) itemsHeli[i] = new List<string>();
+				if (useCustomTableApc && includeApcCrate) itemsApc[i] = new List<string>();
 				if (useCustomTableSupply && includeSupplyDrop) itemsSupply[i] = new List<string>();
 			}
 			if (seperateLootTables)
@@ -362,6 +393,7 @@ namespace Oxide.Plugins
 				totalItems = 0;
 
 			if (useCustomTableHeli && includeHeliCrate) totalItemsHeli = 0;
+			if (useCustomTableApc && includeApcCrate) totalItemsApc = 0;
 			if (useCustomTableSupply && includeSupplyDrop) totalItemsSupply = 0;
 
 			var notExistingItems = 0;
@@ -369,6 +401,7 @@ namespace Oxide.Plugins
 			var notExistingItemsC = 0;
 
 			var notExistingItemsHeli = 0;
+			var notExistingItemsApc = 0;
 			var notExistingItemsSupply = 0;
 
 			foreach (var rarity in rarityItemOverride.ToList())
@@ -460,6 +493,27 @@ namespace Oxide.Plugins
 					}
 				}
 			}
+			if (useCustomTableApc && includeApcCrate)
+			{
+				foreach (var item in originalItemsApc)
+				{
+					if (item == null) continue;
+					int index = RarityIndex(item.rarity);
+					object indexoverride;
+					if (rarityItemOverride.TryGetValue(item.shortname, out indexoverride))
+						index = Convert.ToInt32(indexoverride);
+					if (ItemExists(item.shortname)) {
+						if (!storedBlacklist.ItemList.Contains(item.shortname)) {
+							itemsApc[index].Add(item.shortname);
+							++totalItemsApc;
+						}
+					}
+					else
+					{
+						++notExistingItemsApc;
+					}
+				}
+			}
 			if (useCustomTableSupply && includeSupplyDrop)
 			{
 				foreach (var item in originalItemsSupply)
@@ -485,6 +539,7 @@ namespace Oxide.Plugins
 			totalItemWeightB = 0;
 			totalItemWeightC = 0;
 			totalItemWeightHeli = 0;
+			totalItemWeightApc = 0;
 			totalItemWeightSupply = 0;
 			for (var i = 0; i < 5; ++i) {
 				if (seperateLootTables)
@@ -497,6 +552,7 @@ namespace Oxide.Plugins
 					totalItemWeight += (itemWeights[i] = ItemWeight(baseItemRarity, i) * items[i].Count);
 				}
 				if (useCustomTableHeli && includeHeliCrate) { totalItemWeightHeli += (itemWeightsHeli[i] = ItemWeight(baseItemRarity, i) * itemsHeli[i].Count); }
+				if (useCustomTableApc && includeApcCrate) { totalItemWeightApc += (itemWeightsApc[i] = ItemWeight(baseItemRarity, i) * itemsApc[i].Count); }
 				if (useCustomTableSupply && includeSupplyDrop) { totalItemWeightSupply += (itemWeightsSupply[i] = ItemWeight(baseItemRarity, i) * itemsSupply[i].Count); }
 				}
 			populatedContainers = 0;
@@ -746,6 +802,48 @@ namespace Oxide.Plugins
 									}
 								}
 								return item;
+				case "apc":
+									do {
+										selectFrom = null;
+										item = null;
+										var r = rng.Next(totalItemWeightApc);
+										for (var i=0; i<5; ++i) {
+											limit += itemWeightsApc[i];
+											if (r < limit) {
+												selectFrom = itemsApc[i];
+												break;
+											}
+										}
+										if (selectFrom == null) {
+											if (--maxRetry <= 0) {
+												PrintError("Endless loop detected: ABORTING");
+												break;
+											}
+											continue;
+										}
+										itemName = selectFrom[rng.Next(0, selectFrom.Count)];
+										item = ItemManager.CreateByName(itemName, 1);
+										if (item == null) {
+											continue;
+										}
+										if (item.info == null) {
+											continue;
+										}
+										break;
+									} while (true);
+									if (item == null)
+										return null;
+									if (item.info.stackable > 1 && storedApcCrate.ItemList.TryGetValue(item.info.shortname, out limit))
+									{
+										if (limit > 0)
+										{
+											if (randomAmountApcCrate)
+												item.amount = rng.Next(1, Math.Min(limit, item.info.stackable));
+											else
+												item.amount = Math.Min(limit, item.info.stackable);
+										}
+									}
+									return item;
 			case "supply":
 								do {
 									selectFrom = null;
@@ -853,6 +951,23 @@ namespace Oxide.Plugins
 				if(useCustomTableHeli)
 				{
 					type = "heli";
+				}
+				else
+				{
+					if (seperateLootTables)
+						type = "crate";
+					else
+						type = "default";
+				}
+			}
+			else if (apcEx.IsMatch(container.gameObject.name) && includeApcCrate) {
+				SuppressRefresh(container);
+				ClearContainer(container);
+				min = minItemsPerApcCrate;
+				max = maxItemsPerApcCrate;
+				if(useCustomTableApc)
+				{
+					type = "apc";
 				}
 				else
 				{
@@ -1356,6 +1471,64 @@ namespace Oxide.Plugins
 		void SaveHeliCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\HeliCrate", storedHeliCrate);
 
 		#endregion HeliCrate
+
+		#region ApcCrate
+
+		class StoredApcCrate
+		{
+			public Dictionary<string, int> ItemList = new Dictionary<string, int>();
+
+			public StoredApcCrate()
+			{
+			}
+		}
+
+		void LoadApcCrate()
+		{
+			storedApcCrate = Interface.GetMod().DataFileSystem.ReadObject<StoredApcCrate>("BetterLoot\\ApcCrate");
+			if (pluginEnabled && storedApcCrate.ItemList.Count > 0 && !includeApcCrate && !useCustomTableApc)
+				Puts("ApcCrate > loot population is disabled by 'includeApcCrate'");
+			if (pluginEnabled && storedApcCrate.ItemList.Count > 0 && !includeApcCrate && useCustomTableApc)
+				Puts("ApcCrate > 'useCustomTableApc' enabled, but loot population inactive by 'includeApcCrate'");
+			if (storedApcCrate.ItemList.Count == 0)
+			{
+				includeApcCrate = false;
+				Config["ApcCrate","includeApcCrate"]= includeApcCrate;
+				Changed = true;
+				Puts("ApcCrate > table not found, option disabled by 'includeApcCrate' > Creating a new file.");
+				storedApcCrate = new StoredApcCrate();
+				foreach(var it in ItemManager.itemList)
+				{
+					int stack = 0;
+					if(!ItemExists(it.shortname)) continue;
+					if(_findTrash.IsMatch(it.shortname)) continue;
+					if(it.shortname == "rock" || it.shortname.Contains("arrow") || it.shortname.Contains("grenade") || it.shortname.Contains("handmade") ||
+					 it.shortname.Contains("bow") || it.shortname.Contains("salvaged") || it.shortname.Contains("knife") ||
+					 it.shortname.Contains("mac") || it.shortname.Contains("waterpipe") || it.shortname.Contains("spear") || it.shortname == "longsword") continue;
+
+					if (it.category == ItemCategory.Weapon) stack = 1;
+					if (it.category == ItemCategory.Ammunition && !it.shortname.Contains("rocket.")) stack = 128;
+					if (it.category == ItemCategory.Ammunition && it.shortname.Contains("rocket.")) stack = 8;
+					if (it.category == ItemCategory.Tool) continue;
+					if (it.category == ItemCategory.Traps) continue;
+					if (it.category == ItemCategory.Construction) continue;
+					if (it.category == ItemCategory.Attire) continue;
+					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
+					if (it.category == ItemCategory.Misc) continue;
+					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Food) continue;
+					if (it.category == ItemCategory.Medical) continue;
+					if (it.category == ItemCategory.Component) continue;
+					if (stack == 0) stack = 1;
+					storedApcCrate.ItemList.Add(it.shortname,stack);
+				}
+				Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\ApcCrate", storedApcCrate);
+			}
+		}
+
+		void SaveApcCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\ApcCrate", storedApcCrate);
+
+		#endregion ApcCrate
 
 		#region Blacklist
 
