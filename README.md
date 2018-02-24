@@ -1,5 +1,5 @@
 # Rustonomy
-- Download the Rust Server files: http://files.facepunch.com/2Fgarry/2F1b1011b1/2FRust_Server.zip
+- Download the Rust Server files: https://www.youtube.com/redirect?redir_token=tDOoSZ1dmBS6Fv61kdDxF78lcGV8MTUxOTU4MjY1NkAxNTE5NDk2MjU2&q=https%3A%2F%2Ffiles.facepunch.com%2Fgarry%2F1b1011b1%2FRust_Server.zip&v=00-VXgbsURQ&event=video_description
 - Edit Run_DS.bat change the server name
 - Run Run_DS.bat
 - Run update.bat
