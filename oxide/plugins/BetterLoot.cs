@@ -24,7 +24,7 @@ namespace Oxide.Plugins
 
 		StoredSupplyDrop storedSupplyDrop = new StoredSupplyDrop();
 		StoredHeliCrate storedHeliCrate = new StoredHeliCrate();
-		StoredApcCrate storedHeliCrate = new StoredApcCrate();
+		StoredApcCrate storedApcCrate = new StoredApcCrate();
 		StoredExportNames storedExportNames = new StoredExportNames();
 		StoredLootTable storedLootTable = new StoredLootTable();
 		SeparateLootTable separateLootTable = new SeparateLootTable();
