@@ -660,7 +660,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeight);
-									for (var i=0; i<6; ++i) {
+									for (var i=0; i<5; ++i) {
 										limit += itemWeights[i];
 										if (r < limit) {
 											selectFrom = items[i];
@@ -702,7 +702,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightC);
-									for (var i=0; i<6; ++i) {
+									for (var i=0; i<5; ++i) {
 										limit += itemWeightsC[i];
 										if (r < limit) {
 											selectFrom = itemsC[i];
@@ -744,7 +744,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightB);
-									for (var i=0; i<6; ++i) {
+									for (var i=0; i<5; ++i) {
 										limit += itemWeightsB[i];
 										if (r < limit) {
 											selectFrom = itemsB[i];
@@ -786,7 +786,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightHeli);
-									for (var i=0; i<6; ++i) {
+									for (var i=0; i<5; ++i) {
 										limit += itemWeightsHeli[i];
 										if (r < limit) {
 											selectFrom = itemsHeli[i];
@@ -828,7 +828,7 @@ namespace Oxide.Plugins
 										selectFrom = null;
 										item = null;
 										var r = rng.Next(totalItemWeightApc);
-										for (var i=0; i<6; ++i) {
+										for (var i=0; i<5; ++i) {
 											limit += itemWeightsApc[i];
 											if (r < limit) {
 												selectFrom = itemsApc[i];
@@ -870,7 +870,7 @@ namespace Oxide.Plugins
 									selectFrom = null;
 									item = null;
 									var r = rng.Next(totalItemWeightSupply);
-									for (var i=0; i<6; ++i) {
+									for (var i=0; i<5; ++i) {
 										limit += itemWeightsSupply[i];
 										if (r < limit) {
 											selectFrom = itemsSupply[i];
