@@ -44,6 +44,38 @@
     "randomAmountApcCrate": true,
     "useCustomTableApc": true
   },
+  "EliteCrate": {
+    "includeEliteCrate": false,
+    "enforceBlacklist": true,
+    "maxItemsPerEliteCrate": 6,
+    "minItemsPerEliteCrate": 3,
+    "randomAmountEliteCrate": true,
+    "useCustomTableElite": true
+  },
+  "ToolCrate": {
+    "includeToolCrate": false,
+    "enforceBlacklist": true,
+    "maxItemsPerToolCrate": 6,
+    "minItemsPerToolCrate": 3,
+    "randomAmountToolCrate": true,
+    "useCustomTableTool": true
+  },
+  "MedicalCrate": {
+    "includeMedicalCrate": false,
+    "enforceBlacklist": true,
+    "maxItemsPerMedicalCrate": 6,
+    "minItemsPerMedicalCrate": 3,
+    "randomAmountMedicalCrate": true,
+    "useCustomTableMedical": true
+  },
+  "FoodCrate": {
+    "includeFoodCrate": false,
+    "enforceBlacklist": true,
+    "maxItemsPerFoodCrate": 6,
+    "minItemsPerFoodCrate": 3,
+    "randomAmountFoodCrate": true,
+    "useCustomTableFood": true
+  },
   "Rarity": {
     "Override": {
       "autoturret": 4,
