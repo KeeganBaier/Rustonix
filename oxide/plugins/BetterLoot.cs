@@ -29,6 +29,7 @@ namespace Oxide.Plugins
 		StoredMedicalCrate storedMedicalCrate = new StoredMedicalCrate();
 		StoredFoodCrate storedFoodCrate = new StoredFoodCrate();
 		StoredEliteCrate storedEliteCrate = new StoredEliteCrate();
+		StoredMilitaryCrate storedMilitaryCrate = new StoredMilitaryCrate();
 		StoredExportNames storedExportNames = new StoredExportNames();
 		StoredLootTable storedLootTable = new StoredLootTable();
 		SeparateLootTable separateLootTable = new SeparateLootTable();
@@ -44,6 +45,7 @@ namespace Oxide.Plugins
 		Regex medicalEx = new Regex(@"crate_normal_2_medical");
 		Regex foodEx = new Regex(@"foodbox");
 		Regex eliteEx = new Regex(@"elite_crate");
+		Regex militaryEx = new Regex(@"crate_normal");
 
 		List<string>[] items = new List<string>[5];
 		List<string>[] itemsB = new List<string>[5];
@@ -54,6 +56,7 @@ namespace Oxide.Plugins
 		List<string>[] itemsMedical = new List<string>[5];
 		List<string>[] itemsFood = new List<string>[5];
 		List<string>[] itemsElite = new List<string>[5];
+		List<string>[] itemsMilitary = new List<string>[5];
 		List<string>[] itemsSupply = new List<string>[5];
 		int totalItems;
 		int totalItemsB;
@@ -64,6 +67,7 @@ namespace Oxide.Plugins
 		int totalItemsMedical;
 		int totalItemsFood;
 		int totalItemsElite;
+		int totalItemsMilitary;
 		int totalItemsSupply;
 		int[] itemWeights = new int[5];
 		int[] itemWeightsB = new int[5];
@@ -74,6 +78,7 @@ namespace Oxide.Plugins
 		int[] itemWeightsMedical = new int[5];
 		int[] itemWeightsFood = new int[5];
 		int[] itemWeightsElite = new int[5];
+		int[] itemWeightsMilitary = new int[5];
 		int[] itemWeightsSupply = new int[5];
 		int totalItemWeight;
 		int totalItemWeightB;
@@ -84,6 +89,7 @@ namespace Oxide.Plugins
 		int totalItemWeightMedical;
 		int totalItemWeightFood;
 		int totalItemWeightElite;
+		int totalItemWeightMilitary;
 		int totalItemWeightSupply;
 
 		List<ItemDefinition> originalItems;
@@ -95,6 +101,7 @@ namespace Oxide.Plugins
 		List<ItemDefinition> originalItemsMedical;
 		List<ItemDefinition> originalItemsFood;
 		List<ItemDefinition> originalItemsElite;
+		List<ItemDefinition> originalItemsMilitary;
 		List<ItemDefinition> originalItemsSupply;
 
 		Random rng = new Random();
@@ -144,6 +151,8 @@ namespace Oxide.Plugins
 		int maxItemsPerFoodCrate;
 		int minItemsPerEliteCrate;
 		int maxItemsPerEliteCrate;
+		int minItemsPerMilitaryCrate;
+		int maxItemsPerMilitaryCrate;
 		double baseItemRarity = 2;
 		int refreshMinutes;
 		bool removeStackedContainers;
@@ -163,6 +172,8 @@ namespace Oxide.Plugins
 		bool randomAmountFoodCrate;
 		bool includeEliteCrate;
 		bool randomAmountEliteCrate;
+		bool includeMilitaryCrate;
+		bool randomAmountMilitaryCrate;
 		bool listUpdatesOnLoaded;
 		bool listUpdatesOnRefresh;
 		bool useCustomTableHeli;
@@ -171,6 +182,7 @@ namespace Oxide.Plugins
 		bool useCustomTableMedical;
 		bool useCustomTableFood;
 		bool useCustomTableElite;
+		bool useCustomTableMilitary;
 		bool useCustomTableSupply;
 		bool refreshBarrels;
 		bool refreshCrates;
@@ -212,7 +224,7 @@ namespace Oxide.Plugins
 			minItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "minItemsPerCrate", 3));
 			maxItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "maxItemsPerCrate", 6));
 			refreshCrates = Convert.ToBoolean(GetConfig("Crate", "refreshCrates", true));
-			crateTypes = Convert.ToString(GetConfig("Crate","crateTypes","crate_normal|crate_tools"));
+			crateTypes = Convert.ToString(GetConfig("Crate","crateTypes","crate_normal_2"));
 			enableCrates = Convert.ToBoolean(GetConfig("Crate", "enableCrates", true));
 			randomAmountCrates = Convert.ToBoolean(GetConfig("Crate", "randomAmountCrates", true));
 
@@ -257,6 +269,12 @@ namespace Oxide.Plugins
 			includeEliteCrate = Convert.ToBoolean(GetConfig("EliteCrate", "includeEliteCrate", false));
 			useCustomTableElite = Convert.ToBoolean(GetConfig("EliteCrate", "useCustomTableElite", true));
 			randomAmountEliteCrate = Convert.ToBoolean(GetConfig("EliteCrate", "randomAmountEliteCrate", true));
+
+			minItemsPerMilitaryCrate = Convert.ToInt32(GetConfig("MilitaryCrate", "minItemsPerMilitaryCrate", 4));
+			maxItemsPerMilitaryCrate = Convert.ToInt32(GetConfig("MilitaryCrate", "maxItemsPerMilitaryCrate", 6));
+			includeMilitaryCrate = Convert.ToBoolean(GetConfig("MilitaryCrate", "includeMilitaryCrate", false));
+			useCustomTableMilitary = Convert.ToBoolean(GetConfig("MilitaryCrate", "useCustomTableMilitary", true));
+			randomAmountMilitaryCrate = Convert.ToBoolean(GetConfig("MilitaryCrate", "randomAmountMilitaryCrate", true));
 
 			refreshMinutes = Convert.ToInt32(GetConfig("Generic", "refreshMinutes", 30));
 			enforceBlacklist = Convert.ToBoolean(GetConfig("Generic", "enforceBlacklist", false));
@@ -385,6 +403,7 @@ namespace Oxide.Plugins
 			LoadMedicalCrate();
 			LoadFoodCrate();
 			LoadEliteCrate();
+			LoadMilitaryCrate();
 			LoadSupplyDrop();
 
 			timer.Once(0.1f, SaveExportNames);
@@ -416,6 +435,7 @@ namespace Oxide.Plugins
 			originalItemsMedical = new List<ItemDefinition>();
 			originalItemsFood = new List<ItemDefinition>();
 			originalItemsElite = new List<ItemDefinition>();
+			originalItemsMilitary = new List<ItemDefinition>();
 			originalItemsSupply = new List<ItemDefinition>();
 
 			// Gather the original items for the loot containers.
@@ -455,6 +475,10 @@ namespace Oxide.Plugins
 				foreach (KeyValuePair<string, int> pair in storedEliteCrate.ItemList)
 					originalItemsElite.Add(ItemManager.FindItemDefinition(pair.Key));
 
+			if (useCustomTableMilitary && includeMilitaryCrate)
+				foreach (KeyValuePair<string, int> pair in storedMilitaryCrate.ItemList)
+					originalItemsMilitary.Add(ItemManager.FindItemDefinition(pair.Key));
+
 			if (useCustomTableSupply && includeSupplyDrop)
 				foreach (KeyValuePair<string, int> pair in storedSupplyDrop.ItemList)
 					originalItemsSupply.Add(ItemManager.FindItemDefinition(pair.Key));
@@ -487,6 +511,9 @@ namespace Oxide.Plugins
 				if (useCustomTableElite && includeEliteCrate)
 					Puts("There are " + originalItemsElite.Count + " items in the EliteTable.");
 
+				if (useCustomTableMilitary && includeMilitaryCrate)
+					Puts("There are " + originalItemsMilitary.Count + " items in the MilitaryTable.");
+
 				if (useCustomTableSupply && includeSupplyDrop)
 					Puts("There are " + originalItemsSupply.Count + " items in the SupplyTable.");
 			}
@@ -509,6 +536,7 @@ namespace Oxide.Plugins
 				if (useCustomTableMedical && includeMedicalCrate) itemsMedical[i] = new List<string>();
 				if (useCustomTableFood && includeFoodCrate) itemsFood[i] = new List<string>();
 				if (useCustomTableElite && includeEliteCrate) itemsElite[i] = new List<string>();
+				if (useCustomTableMilitary && includeMilitaryCrate) itemsMilitary[i] = new List<string>();
 				if (useCustomTableSupply && includeSupplyDrop) itemsSupply[i] = new List<string>();
 			}
 
@@ -527,6 +555,7 @@ namespace Oxide.Plugins
 			if (useCustomTableMedical && includeMedicalCrate) totalItemsMedical = 0;
 			if (useCustomTableFood && includeFoodCrate) totalItemsFood = 0;
 			if (useCustomTableElite && includeEliteCrate) totalItemsElite = 0;
+			if (useCustomTableMilitary && includeMilitaryCrate) totalItemsMilitary = 0;
 			if (useCustomTableSupply && includeSupplyDrop) totalItemsSupply = 0;
 
 			var notExistingItems = 0;
@@ -539,6 +568,7 @@ namespace Oxide.Plugins
 			var notExistingItemsMedical = 0;
 			var notExistingItemsFood = 0;
 			var notExistingItemsElite = 0;
+			var notExistingItemsMilitary = 0;
 			var notExistingItemsSupply = 0;
 
 			// Apply rarity to certain items.
@@ -737,6 +767,27 @@ namespace Oxide.Plugins
 					}
 				}
 			}
+			if (useCustomTableMilitary && includeMilitaryCrate)
+			{
+				foreach (var item in originalItemsMilitary)
+				{
+					if (item == null) continue;
+					int index = RarityIndex(item.rarity);
+					object indexoverride;
+					if (rarityItemOverride.TryGetValue(item.shortname, out indexoverride))
+						index = Convert.ToInt32(indexoverride);
+					if (ItemExists(item.shortname)) {
+						if (!storedBlacklist.ItemList.Contains(item.shortname)) {
+							itemsMilitary[index].Add(item.shortname);
+							++totalItemsMilitary;
+						}
+					}
+					else
+					{
+						++notExistingItemsMilitary;
+					}
+				}
+			}
 			if (useCustomTableSupply && includeSupplyDrop)
 			{
 				foreach (var item in originalItemsSupply)
@@ -767,6 +818,7 @@ namespace Oxide.Plugins
 			totalItemWeightMedical = 0;
 			totalItemWeightFood = 0;
 			totalItemWeightElite = 0;
+			totalItemWeightMilitary = 0;
 			totalItemWeightSupply = 0;
 
 			// TODO: Change 6 index to the detect all of the configurable options.
@@ -786,6 +838,7 @@ namespace Oxide.Plugins
 				if (useCustomTableMedical && includeMedicalCrate) { totalItemWeightMedical += (itemWeightsMedical[i] = ItemWeight(baseItemRarity, i) * itemsMedical[i].Count); }
 				if (useCustomTableFood && includeFoodCrate) { totalItemWeightFood += (itemWeightsFood[i] = ItemWeight(baseItemRarity, i) * itemsFood[i].Count); }
 				if (useCustomTableElite && includeEliteCrate) { totalItemWeightElite += (itemWeightsElite[i] = ItemWeight(baseItemRarity, i) * itemsElite[i].Count); }
+				if (useCustomTableMilitary && includeMilitaryCrate) { totalItemWeightMilitary += (itemWeightsMilitary[i] = ItemWeight(baseItemRarity, i) * itemsMilitary[i].Count); }
 				if (useCustomTableSupply && includeSupplyDrop) { totalItemWeightSupply += (itemWeightsSupply[i] = ItemWeight(baseItemRarity, i) * itemsSupply[i].Count); }
 				}
 			populatedContainers = 0;
@@ -1245,6 +1298,48 @@ namespace Oxide.Plugins
 										}
 									}
 									return item;
+			case "military":
+								do {
+									selectFrom = null;
+									item = null;
+									var r = rng.Next(totalItemWeightMilitary);
+									for (var i=0; i<5; ++i) {
+										limit += itemWeightsMilitary[i];
+										if (r < limit) {
+											selectFrom = itemsMilitary[i];
+											break;
+										}
+									}
+									if (selectFrom == null) {
+										if (--maxRetry <= 0) {
+											PrintError("Endless loop detected: ABORTING");
+											break;
+										}
+										continue;
+									}
+									itemName = selectFrom[rng.Next(0, selectFrom.Count)];
+									item = ItemManager.CreateByName(itemName, 1);
+									if (item == null) {
+										continue;
+									}
+									if (item.info == null) {
+										continue;
+									}
+									break;
+								} while (true);
+								if (item == null)
+									return null;
+								if (item.info.stackable > 1 && storedMilitaryCrate.ItemList.TryGetValue(item.info.shortname, out limit))
+								{
+									if (limit > 0)
+									{
+										if (randomAmountMilitaryCrate)
+											item.amount = rng.Next(1, Math.Min(limit, item.info.stackable));
+										else
+											item.amount = Math.Min(limit, item.info.stackable);
+									}
+								}
+								return item;
 			case "supply":
 								do {
 									selectFrom = null;
@@ -1437,6 +1532,23 @@ namespace Oxide.Plugins
 				if(useCustomTableElite)
 				{
 					type = "elite";
+				}
+				else
+				{
+					if (seperateLootTables)
+						type = "crate";
+					else
+						type = "default";
+				}
+			}
+			else if (militaryEx.IsMatch(container.gameObject.name) && includeMilitaryCrate) {
+				SuppressRefresh(container);
+				ClearContainer(container);
+				min = minItemsPerMilitaryCrate;
+				max = maxItemsPerMilitaryCrate;
+				if(useCustomTableMilitary)
+				{
+					type = "military";
 				}
 				else
 				{
@@ -2230,6 +2342,64 @@ namespace Oxide.Plugins
 		void SaveEliteCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\EliteCrate", storedEliteCrate);
 
 		#endregion EliteCrate
+
+		#region MilitaryCrate
+
+		class StoredMilitaryCrate
+		{
+			public Dictionary<string, int> ItemList = new Dictionary<string, int>();
+
+			public StoredMilitaryCrate()
+			{
+			}
+		}
+
+		void LoadMilitaryCrate()
+		{
+			storedMilitaryCrate = Interface.GetMod().DataFileSystem.ReadObject<StoredMilitaryCrate>("BetterLoot\\MilitaryCrate");
+			if (pluginEnabled && storedMilitaryCrate.ItemList.Count > 0 && !includeMilitaryCrate && !useCustomTableMilitary)
+				Puts("MilitaryCrate > loot population is disabled by 'includeMilitaryCrate'");
+			if (pluginEnabled && storedMilitaryCrate.ItemList.Count > 0 && !includeMilitaryCrate && useCustomTableMilitary)
+				Puts("MilitaryCrate > 'useCustomTableMilitary' enabled, but loot population inactive by 'includeMilitaryCrate'");
+			if (storedMilitaryCrate.ItemList.Count == 0)
+			{
+				includeMilitaryCrate = false;
+				Config["MilitaryCrate","includeMilitaryCrate"]= includeMilitaryCrate;
+				Changed = true;
+				Puts("MilitaryCrate > table not found, option disabled by 'includeMilitaryCrate' > Creating a new file.");
+				storedMilitaryCrate = new StoredMilitaryCrate();
+				foreach(var it in ItemManager.itemList)
+				{
+					int stack = 0;
+					if(!ItemExists(it.shortname)) continue;
+					if(_findTrash.IsMatch(it.shortname)) continue;
+					if(it.shortname == "rock" || it.shortname.Contains("arrow") || it.shortname.Contains("grenade") || it.shortname.Contains("handmade") ||
+					 it.shortname.Contains("bow") || it.shortname.Contains("salvaged") || it.shortname.Contains("knife") ||
+					 it.shortname.Contains("mac") || it.shortname.Contains("waterpipe") || it.shortname.Contains("spear") || it.shortname == "longsword") continue;
+
+					if (it.category == ItemCategory.Weapon) stack = 1;
+					if (it.category == ItemCategory.Ammunition && !it.shortname.Contains("rocket.")) stack = 128;
+					if (it.category == ItemCategory.Ammunition && it.shortname.Contains("rocket.")) stack = 8;
+					if (it.category == ItemCategory.Tool) continue;
+					if (it.category == ItemCategory.Traps) continue;
+					if (it.category == ItemCategory.Construction) continue;
+					if (it.category == ItemCategory.Attire) continue;
+					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
+					if (it.category == ItemCategory.Misc) continue;
+					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Food) continue;
+					if (it.category == ItemCategory.Medical) continue;
+					if (it.category == ItemCategory.Component) continue;
+					if (stack == 0) stack = 1;
+					storedMilitaryCrate.ItemList.Add(it.shortname,stack);
+				}
+				Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\MilitaryCrate", storedMilitaryCrate);
+			}
+		}
+
+		void SaveMilitaryCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\MilitaryCrate", storedMilitaryCrate);
+
+		#endregion MilitaryCrate
 
 		#region Blacklist
 

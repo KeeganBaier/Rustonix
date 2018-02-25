@@ -31,6 +31,7 @@
     },
     "GatherResourceModifiers": {
       "Sulfur": 3.0,
+      "Metal": 3.0,
       "Wood": 3.0,
       "Cloth": 3.0,
       "Stones": 3.0
@@ -38,7 +39,10 @@
     "MiningQuarryResourceTickRate": 3.0,
     "PickupResourceModifiers": {
       "Stones": 3.0,
-      "Wood": 3.0
+      "Wood": 3.0,
+      "Sulfur": 3.0,
+      "Metal": 3.0,
+      "Cloth": 3.0
     },
     "QuarryResourceModifiers": {},
     "SurveyResourceModifiers": {}

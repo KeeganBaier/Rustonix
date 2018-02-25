@@ -9,7 +9,7 @@
     "refreshBarrels": false
   },
   "Crate": {
-    "crateTypes": "crate_normal|crate_tools",
+    "crateTypes": "crate_normal_2|crate_tools",
     "enableCrates": true,
     "enforceBlacklist": true,
     "maxItemsPerCrate": 6,
@@ -69,6 +69,14 @@
     "useCustomTableMedical": true
   },
   "FoodCrate": {
+    "includeFoodCrate": false,
+    "enforceBlacklist": true,
+    "maxItemsPerFoodCrate": 6,
+    "minItemsPerFoodCrate": 3,
+    "randomAmountFoodCrate": true,
+    "useCustomTableFood": true
+  },
+  "MilitaryCrate": {
     "includeFoodCrate": false,
     "enforceBlacklist": true,
     "maxItemsPerFoodCrate": 6,
