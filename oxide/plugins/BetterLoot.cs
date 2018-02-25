@@ -25,6 +25,10 @@ namespace Oxide.Plugins
 		StoredSupplyDrop storedSupplyDrop = new StoredSupplyDrop();
 		StoredHeliCrate storedHeliCrate = new StoredHeliCrate();
 		StoredApcCrate storedApcCrate = new StoredApcCrate();
+		StoredToolCrate storedToolCrate = new StoredToolCrate();
+		StoredMedicalCrate storedMedicalCrate = new StoredMedicalCrate();
+		StoredFoodCrate storedFoodCrate = new StoredFoodCrate();
+		StoredEliteCrate storedEliteCrate = new StoredEliteCrate();
 		StoredExportNames storedExportNames = new StoredExportNames();
 		StoredLootTable storedLootTable = new StoredLootTable();
 		SeparateLootTable separateLootTable = new SeparateLootTable();
@@ -36,30 +40,50 @@ namespace Oxide.Plugins
 		Regex crateEx;
 		Regex heliEx = new Regex(@"heli_crate");
 		Regex apcEx = new Regex(@"bradley_crate");
+		Regex toolEx = new Regex(@"crate_tools");
+		Regex medicalEx = new Regex(@"crate_normal_2_medical");
+		Regex foodEx = new Regex(@"foodbox");
+		Regex eliteEx = new Regex(@"elite_crate");
 
 		List<string>[] items = new List<string>[5];
 		List<string>[] itemsB = new List<string>[5];
 		List<string>[] itemsC = new List<string>[5];
 		List<string>[] itemsHeli = new List<string>[5];
 		List<string>[] itemsApc = new List<string>[5];
+		List<string>[] itemsTool = new List<string>[5];
+		List<string>[] itemsMedical = new List<string>[5];
+		List<string>[] itemsFood = new List<string>[5];
+		List<string>[] itemsElite = new List<string>[5];
 		List<string>[] itemsSupply = new List<string>[5];
 		int totalItems;
 		int totalItemsB;
 		int totalItemsC;
 		int totalItemsHeli;
 		int totalItemsApc;
+		int totalItemsTool;
+		int totalItemsMedical;
+		int totalItemsFood;
+		int totalItemsElite;
 		int totalItemsSupply;
 		int[] itemWeights = new int[5];
 		int[] itemWeightsB = new int[5];
 		int[] itemWeightsC = new int[5];
 		int[] itemWeightsHeli = new int[5];
 		int[] itemWeightsApc = new int[5];
+		int[] itemWeightsTool = new int[5];
+		int[] itemWeightsMedical = new int[5];
+		int[] itemWeightsFood = new int[5];
+		int[] itemWeightsElite = new int[5];
 		int[] itemWeightsSupply = new int[5];
 		int totalItemWeight;
 		int totalItemWeightB;
 		int totalItemWeightC;
 		int totalItemWeightHeli;
 		int totalItemWeightApc;
+		int totalItemWeightTool;
+		int totalItemWeightMedical;
+		int totalItemWeightFood;
+		int totalItemWeightElite;
 		int totalItemWeightSupply;
 
 		List<ItemDefinition> originalItems;
@@ -67,6 +91,10 @@ namespace Oxide.Plugins
 		List<ItemDefinition> originalItemsC;
 		List<ItemDefinition> originalItemsHeli;
 		List<ItemDefinition> originalItemsApc;
+		List<ItemDefinition> originalItemsTool;
+		List<ItemDefinition> originalItemsMedical;
+		List<ItemDefinition> originalItemsFood;
+		List<ItemDefinition> originalItemsElite;
 		List<ItemDefinition> originalItemsSupply;
 
 		Random rng = new Random();
@@ -108,6 +136,14 @@ namespace Oxide.Plugins
 		int maxItemsPerHeliCrate;
 		int minItemsPerApcCrate;
 		int maxItemsPerApcCrate;
+		int minItemsPerToolCrate;
+		int maxItemsPerToolCrate;
+		int minItemsPerMedicalCrate;
+		int maxItemsPerMedicalCrate;
+		int minItemsPerFoodCrate;
+		int maxItemsPerFoodCrate;
+		int minItemsPerEliteCrate;
+		int maxItemsPerEliteCrate;
 		double baseItemRarity = 2;
 		int refreshMinutes;
 		bool removeStackedContainers;
@@ -119,10 +155,22 @@ namespace Oxide.Plugins
 		bool randomAmountHeliCrate;
 		bool includeApcCrate;
 		bool randomAmountApcCrate;
+		bool includeToolCrate;
+		bool randomAmountToolCrate;
+		bool includeMedicalCrate;
+		bool randomAmountMedicalCrate;
+		bool includeFoodCrate;
+		bool randomAmountFoodCrate;
+		bool includeEliteCrate;
+		bool randomAmountEliteCrate;
 		bool listUpdatesOnLoaded;
 		bool listUpdatesOnRefresh;
 		bool useCustomTableHeli;
 		bool useCustomTableApc;
+		bool useCustomTableTool;
+		bool useCustomTableMedical;
+		bool useCustomTableFood;
+		bool useCustomTableElite;
 		bool useCustomTableSupply;
 		bool refreshBarrels;
 		bool refreshCrates;
@@ -185,6 +233,30 @@ namespace Oxide.Plugins
 			includeApcCrate = Convert.ToBoolean(GetConfig("ApcCrate", "includeApcCrate", false));
 			useCustomTableApc = Convert.ToBoolean(GetConfig("ApcCrate", "useCustomTableApc", true));
 			randomAmountApcCrate = Convert.ToBoolean(GetConfig("ApcCrate", "randomAmountApcCrate", true));
+
+			minItemsPerToolCrate = Convert.ToInt32(GetConfig("ToolCrate", "minItemsPerToolCrate", 4));
+			maxItemsPerToolCrate = Convert.ToInt32(GetConfig("ToolCrate", "maxItemsPerToolCrate", 6));
+			includeToolCrate = Convert.ToBoolean(GetConfig("ToolCrate", "includeToolCrate", false));
+			useCustomTableTool = Convert.ToBoolean(GetConfig("ToolCrate", "useCustomTableTool", true));
+			randomAmountToolCrate = Convert.ToBoolean(GetConfig("ToolCrate", "randomAmountToolCrate", true));
+
+			minItemsPerMedicalCrate = Convert.ToInt32(GetConfig("MedicalCrate", "minItemsPerMedicalCrate", 4));
+			maxItemsPerMedicalCrate = Convert.ToInt32(GetConfig("MedicalCrate", "maxItemsPerMedicalCrate", 6));
+			includeMedicalCrate = Convert.ToBoolean(GetConfig("MedicalCrate", "includeMedicalCrate", false));
+			useCustomTableMedical = Convert.ToBoolean(GetConfig("MedicalCrate", "useCustomTableMedical", true));
+			randomAmountMedicalCrate = Convert.ToBoolean(GetConfig("MedicalCrate", "randomAmountMedicalCrate", true));
+
+			minItemsPerFoodCrate = Convert.ToInt32(GetConfig("FoodCrate", "minItemsPerFoodCrate", 4));
+			maxItemsPerFoodCrate = Convert.ToInt32(GetConfig("FoodCrate", "maxItemsPerFoodCrate", 6));
+			includeFoodCrate = Convert.ToBoolean(GetConfig("FoodCrate", "includeFoodCrate", false));
+			useCustomTableFood = Convert.ToBoolean(GetConfig("FoodCrate", "useCustomTableFood", true));
+			randomAmountFoodCrate = Convert.ToBoolean(GetConfig("FoodCrate", "randomAmountFoodCrate", true));
+
+			minItemsPerEliteCrate = Convert.ToInt32(GetConfig("EliteCrate", "minItemsPerEliteCrate", 4));
+			maxItemsPerEliteCrate = Convert.ToInt32(GetConfig("EliteCrate", "maxItemsPerEliteCrate", 6));
+			includeEliteCrate = Convert.ToBoolean(GetConfig("EliteCrate", "includeEliteCrate", false));
+			useCustomTableElite = Convert.ToBoolean(GetConfig("EliteCrate", "useCustomTableElite", true));
+			randomAmountEliteCrate = Convert.ToBoolean(GetConfig("EliteCrate", "randomAmountEliteCrate", true));
 
 			refreshMinutes = Convert.ToInt32(GetConfig("Generic", "refreshMinutes", 30));
 			enforceBlacklist = Convert.ToBoolean(GetConfig("Generic", "enforceBlacklist", false));
@@ -309,6 +381,10 @@ namespace Oxide.Plugins
 
 			LoadHeliCrate();
 			LoadApcCrate();
+			LoadToolCrate();
+			LoadMedicalCrate();
+			LoadFoodCrate();
+			LoadEliteCrate();
 			LoadSupplyDrop();
 
 			timer.Once(0.1f, SaveExportNames);
@@ -336,6 +412,10 @@ namespace Oxide.Plugins
 
 			originalItemsHeli = new List<ItemDefinition>();
 			originalItemsApc = new List<ItemDefinition>();
+			originalItemsTool = new List<ItemDefinition>();
+			originalItemsMedical = new List<ItemDefinition>();
+			originalItemsFood = new List<ItemDefinition>();
+			originalItemsElite = new List<ItemDefinition>();
 			originalItemsSupply = new List<ItemDefinition>();
 
 			// Gather the original items for the loot containers.
@@ -359,6 +439,22 @@ namespace Oxide.Plugins
 				foreach (KeyValuePair<string, int> pair in storedApcCrate.ItemList)
 					originalItemsApc.Add(ItemManager.FindItemDefinition(pair.Key));
 
+			if (useCustomTableTool && includeToolCrate)
+				foreach (KeyValuePair<string, int> pair in storedToolCrate.ItemList)
+					originalItemsTool.Add(ItemManager.FindItemDefinition(pair.Key));
+
+			if (useCustomTableMedical && includeMedicalCrate)
+				foreach (KeyValuePair<string, int> pair in storedMedicalCrate.ItemList)
+					originalItemsMedical.Add(ItemManager.FindItemDefinition(pair.Key));
+
+			if (useCustomTableFood && includeFoodCrate)
+				foreach (KeyValuePair<string, int> pair in storedFoodCrate.ItemList)
+					originalItemsFood.Add(ItemManager.FindItemDefinition(pair.Key));
+
+			if (useCustomTableElite && includeEliteCrate)
+				foreach (KeyValuePair<string, int> pair in storedEliteCrate.ItemList)
+					originalItemsElite.Add(ItemManager.FindItemDefinition(pair.Key));
+
 			if (useCustomTableSupply && includeSupplyDrop)
 				foreach (KeyValuePair<string, int> pair in storedSupplyDrop.ItemList)
 					originalItemsSupply.Add(ItemManager.FindItemDefinition(pair.Key));
@@ -379,6 +475,18 @@ namespace Oxide.Plugins
 				if (useCustomTableApc && includeApcCrate)
 					Puts("There are " + originalItemsApc.Count + " items in the ApcTable.");
 
+				if (useCustomTableTool && includeToolCrate)
+					Puts("There are " + originalItemsTool.Count + " items in the ToolTable.");
+
+				if (useCustomTableMedical && includeMedicalCrate)
+					Puts("There are " + originalItemsMedical.Count + " items in the MedicalTable.");
+
+				if (useCustomTableFood && includeFoodCrate)
+					Puts("There are " + originalItemsFood.Count + " items in the FoodTable.");
+
+				if (useCustomTableElite && includeEliteCrate)
+					Puts("There are " + originalItemsElite.Count + " items in the EliteTable.");
+
 				if (useCustomTableSupply && includeSupplyDrop)
 					Puts("There are " + originalItemsSupply.Count + " items in the SupplyTable.");
 			}
@@ -397,6 +505,10 @@ namespace Oxide.Plugins
 
 				if (useCustomTableHeli && includeHeliCrate) itemsHeli[i] = new List<string>();
 				if (useCustomTableApc && includeApcCrate) itemsApc[i] = new List<string>();
+				if (useCustomTableTool && includeToolCrate) itemsTool[i] = new List<string>();
+				if (useCustomTableMedical && includeMedicalCrate) itemsMedical[i] = new List<string>();
+				if (useCustomTableFood && includeFoodCrate) itemsFood[i] = new List<string>();
+				if (useCustomTableElite && includeEliteCrate) itemsElite[i] = new List<string>();
 				if (useCustomTableSupply && includeSupplyDrop) itemsSupply[i] = new List<string>();
 			}
 
@@ -411,6 +523,10 @@ namespace Oxide.Plugins
 
 			if (useCustomTableHeli && includeHeliCrate) totalItemsHeli = 0;
 			if (useCustomTableApc && includeApcCrate) totalItemsApc = 0;
+			if (useCustomTableTool && includeToolCrate) totalItemsTool = 0;
+			if (useCustomTableMedical && includeMedicalCrate) totalItemsMedical = 0;
+			if (useCustomTableFood && includeFoodCrate) totalItemsFood = 0;
+			if (useCustomTableElite && includeEliteCrate) totalItemsElite = 0;
 			if (useCustomTableSupply && includeSupplyDrop) totalItemsSupply = 0;
 
 			var notExistingItems = 0;
@@ -419,6 +535,10 @@ namespace Oxide.Plugins
 
 			var notExistingItemsHeli = 0;
 			var notExistingItemsApc = 0;
+			var notExistingItemsTool = 0;
+			var notExistingItemsMedical = 0;
+			var notExistingItemsFood = 0;
+			var notExistingItemsElite = 0;
 			var notExistingItemsSupply = 0;
 
 			// Apply rarity to certain items.
@@ -533,6 +653,90 @@ namespace Oxide.Plugins
 					}
 				}
 			}
+			if (useCustomTableTool && includeToolCrate)
+			{
+				foreach (var item in originalItemsTool)
+				{
+					if (item == null) continue;
+					int index = RarityIndex(item.rarity);
+					object indexoverride;
+					if (rarityItemOverride.TryGetValue(item.shortname, out indexoverride))
+						index = Convert.ToInt32(indexoverride);
+					if (ItemExists(item.shortname)) {
+						if (!storedBlacklist.ItemList.Contains(item.shortname)) {
+							itemsTool[index].Add(item.shortname);
+							++totalItemsTool;
+						}
+					}
+					else
+					{
+						++notExistingItemsTool;
+					}
+				}
+			}
+			if (useCustomTableMedical && includeMedicalCrate)
+			{
+				foreach (var item in originalItemsMedical)
+				{
+					if (item == null) continue;
+					int index = RarityIndex(item.rarity);
+					object indexoverride;
+					if (rarityItemOverride.TryGetValue(item.shortname, out indexoverride))
+						index = Convert.ToInt32(indexoverride);
+					if (ItemExists(item.shortname)) {
+						if (!storedBlacklist.ItemList.Contains(item.shortname)) {
+							itemsMedical[index].Add(item.shortname);
+							++totalItemsMedical;
+						}
+					}
+					else
+					{
+						++notExistingItemsMedical;
+					}
+				}
+			}
+			if (useCustomTableFood && includeFoodCrate)
+			{
+				foreach (var item in originalItemsFood)
+				{
+					if (item == null) continue;
+					int index = RarityIndex(item.rarity);
+					object indexoverride;
+					if (rarityItemOverride.TryGetValue(item.shortname, out indexoverride))
+						index = Convert.ToInt32(indexoverride);
+					if (ItemExists(item.shortname)) {
+						if (!storedBlacklist.ItemList.Contains(item.shortname)) {
+							itemsFood[index].Add(item.shortname);
+							++totalItemsFood;
+						}
+					}
+					else
+					{
+						++notExistingItemsFood;
+					}
+				}
+			}
+			if (useCustomTableElite && includeEliteCrate)
+			{
+				foreach (var item in originalItemsElite)
+				{
+					if (item == null) continue;
+					int index = RarityIndex(item.rarity);
+					object indexoverride;
+					if (rarityItemOverride.TryGetValue(item.shortname, out indexoverride))
+						index = Convert.ToInt32(indexoverride);
+					if (ItemExists(item.shortname)) {
+						if (!storedBlacklist.ItemList.Contains(item.shortname)) {
+							itemsElite[index].Add(item.shortname);
+							++totalItemsElite;
+						}
+					}
+					else
+					{
+						++notExistingItemsElite;
+					}
+				}
+			}
 			if (useCustomTableSupply && includeSupplyDrop)
 			{
 				foreach (var item in originalItemsSupply)
@@ -559,6 +763,10 @@ namespace Oxide.Plugins
 			totalItemWeightC = 0;
 			totalItemWeightHeli = 0;
 			totalItemWeightApc = 0;
+			totalItemWeightTool = 0;
+			totalItemWeightMedical = 0;
+			totalItemWeightFood = 0;
+			totalItemWeightElite = 0;
 			totalItemWeightSupply = 0;
 
 			// TODO: Change 6 index to the detect all of the configurable options.
@@ -574,6 +782,10 @@ namespace Oxide.Plugins
 				}
 				if (useCustomTableHeli && includeHeliCrate) { totalItemWeightHeli += (itemWeightsHeli[i] = ItemWeight(baseItemRarity, i) * itemsHeli[i].Count); }
 				if (useCustomTableApc && includeApcCrate) { totalItemWeightApc += (itemWeightsApc[i] = ItemWeight(baseItemRarity, i) * itemsApc[i].Count); }
+				if (useCustomTableTool && includeToolCrate) { totalItemWeightTool += (itemWeightsTool[i] = ItemWeight(baseItemRarity, i) * itemsTool[i].Count); }
+				if (useCustomTableMedical && includeMedicalCrate) { totalItemWeightMedical += (itemWeightsMedical[i] = ItemWeight(baseItemRarity, i) * itemsMedical[i].Count); }
+				if (useCustomTableFood && includeFoodCrate) { totalItemWeightFood += (itemWeightsFood[i] = ItemWeight(baseItemRarity, i) * itemsFood[i].Count); }
+				if (useCustomTableElite && includeEliteCrate) { totalItemWeightElite += (itemWeightsElite[i] = ItemWeight(baseItemRarity, i) * itemsElite[i].Count); }
 				if (useCustomTableSupply && includeSupplyDrop) { totalItemWeightSupply += (itemWeightsSupply[i] = ItemWeight(baseItemRarity, i) * itemsSupply[i].Count); }
 				}
 			populatedContainers = 0;
@@ -865,6 +1077,174 @@ namespace Oxide.Plugins
 										}
 									}
 									return item;
+				case "tool":
+									do {
+										selectFrom = null;
+										item = null;
+										var r = rng.Next(totalItemWeightTool);
+										for (var i=0; i<5; ++i) {
+											limit += itemWeightsTool[i];
+											if (r < limit) {
+												selectFrom = itemsTool[i];
+												break;
+											}
+										}
+										if (selectFrom == null) {
+											if (--maxRetry <= 0) {
+												PrintError("Endless loop detected: ABORTING");
+												break;
+											}
+											continue;
+										}
+										itemName = selectFrom[rng.Next(0, selectFrom.Count)];
+										item = ItemManager.CreateByName(itemName, 1);
+										if (item == null) {
+											continue;
+										}
+										if (item.info == null) {
+											continue;
+										}
+										break;
+									} while (true);
+									if (item == null)
+										return null;
+									if (item.info.stackable > 1 && storedToolCrate.ItemList.TryGetValue(item.info.shortname, out limit))
+									{
+										if (limit > 0)
+										{
+											if (randomAmountToolCrate)
+												item.amount = rng.Next(1, Math.Min(limit, item.info.stackable));
+											else
+												item.amount = Math.Min(limit, item.info.stackable);
+										}
+									}
+									return item;
+				case "medical":
+									do {
+										selectFrom = null;
+										item = null;
+										var r = rng.Next(totalItemWeightMedical);
+										for (var i=0; i<5; ++i) {
+											limit += itemWeightsMedical[i];
+											if (r < limit) {
+												selectFrom = itemsMedical[i];
+												break;
+											}
+										}
+										if (selectFrom == null) {
+											if (--maxRetry <= 0) {
+												PrintError("Endless loop detected: ABORTING");
+												break;
+											}
+											continue;
+										}
+										itemName = selectFrom[rng.Next(0, selectFrom.Count)];
+										item = ItemManager.CreateByName(itemName, 1);
+										if (item == null) {
+											continue;
+										}
+										if (item.info == null) {
+											continue;
+										}
+										break;
+									} while (true);
+									if (item == null)
+										return null;
+									if (item.info.stackable > 1 && storedMedicalCrate.ItemList.TryGetValue(item.info.shortname, out limit))
+									{
+										if (limit > 0)
+										{
+											if (randomAmountMedicalCrate)
+												item.amount = rng.Next(1, Math.Min(limit, item.info.stackable));
+											else
+												item.amount = Math.Min(limit, item.info.stackable);
+										}
+									}
+									return item;
+				case "food":
+									do {
+										selectFrom = null;
+										item = null;
+										var r = rng.Next(totalItemWeightFood);
+										for (var i=0; i<5; ++i) {
+											limit += itemWeightsFood[i];
+											if (r < limit) {
+												selectFrom = itemsFood[i];
+												break;
+											}
+										}
+										if (selectFrom == null) {
+											if (--maxRetry <= 0) {
+												PrintError("Endless loop detected: ABORTING");
+												break;
+											}
+											continue;
+										}
+										itemName = selectFrom[rng.Next(0, selectFrom.Count)];
+										item = ItemManager.CreateByName(itemName, 1);
+										if (item == null) {
+											continue;
+										}
+										if (item.info == null) {
+											continue;
+										}
+										break;
+									} while (true);
+									if (item == null)
+										return null;
+									if (item.info.stackable > 1 && storedFoodCrate.ItemList.TryGetValue(item.info.shortname, out limit))
+									{
+										if (limit > 0)
+										{
+											if (randomAmountFoodCrate)
+												item.amount = rng.Next(1, Math.Min(limit, item.info.stackable));
+											else
+												item.amount = Math.Min(limit, item.info.stackable);
+										}
+									}
+									return item;
+				case "elite":
+									do {
+										selectFrom = null;
+										item = null;
+										var r = rng.Next(totalItemWeightElite);
+										for (var i=0; i<5; ++i) {
+											limit += itemWeightsElite[i];
+											if (r < limit) {
+												selectFrom = itemsElite[i];
+												break;
+											}
+										}
+										if (selectFrom == null) {
+											if (--maxRetry <= 0) {
+												PrintError("Endless loop detected: ABORTING");
+												break;
+											}
+											continue;
+										}
+										itemName = selectFrom[rng.Next(0, selectFrom.Count)];
+										item = ItemManager.CreateByName(itemName, 1);
+										if (item == null) {
+											continue;
+										}
+										if (item.info == null) {
+											continue;
+										}
+										break;
+									} while (true);
+									if (item == null)
+										return null;
+									if (item.info.stackable > 1 && storedEliteCrate.ItemList.TryGetValue(item.info.shortname, out limit))
+									{
+										if (limit > 0)
+										{
+											if (randomAmountEliteCrate)
+												item.amount = rng.Next(1, Math.Min(limit, item.info.stackable));
+											else
+												item.amount = Math.Min(limit, item.info.stackable);
+										}
+									}
+									return item;
 			case "supply":
 								do {
 									selectFrom = null;
@@ -989,6 +1369,74 @@ namespace Oxide.Plugins
 				if(useCustomTableApc)
 				{
 					type = "apc";
+				}
+				else
+				{
+					if (seperateLootTables)
+						type = "crate";
+					else
+						type = "default";
+				}
+			}
+			else if (toolEx.IsMatch(container.gameObject.name) && includeToolCrate) {
+				SuppressRefresh(container);
+				ClearContainer(container);
+				min = minItemsPerToolCrate;
+				max = maxItemsPerToolCrate;
+				if(useCustomTableTool)
+				{
+					type = "tool";
+				}
+				else
+				{
+					if (seperateLootTables)
+						type = "crate";
+					else
+						type = "default";
+				}
+			}
+			else if (medicalEx.IsMatch(container.gameObject.name) && includeMedicalCrate) {
+				SuppressRefresh(container);
+				ClearContainer(container);
+				min = minItemsPerMedicalCrate;
+				max = maxItemsPerMedicalCrate;
+				if(useCustomTableMedical)
+				{
+					type = "medical";
+				}
+				else
+				{
+					if (seperateLootTables)
+						type = "crate";
+					else
+						type = "default";
+				}
+			}
+			else if (foodEx.IsMatch(container.gameObject.name) && includeFoodCrate) {
+				SuppressRefresh(container);
+				ClearContainer(container);
+				min = minItemsPerFoodCrate;
+				max = maxItemsPerFoodCrate;
+				if(useCustomTableFood)
+				{
+					type = "food";
+				}
+				else
+				{
+					if (seperateLootTables)
+						type = "crate";
+					else
+						type = "default";
+				}
+			}
+			else if (eliteEx.IsMatch(container.gameObject.name) && includeEliteCrate) {
+				SuppressRefresh(container);
+				ClearContainer(container);
+				min = minItemsPerEliteCrate;
+				max = maxItemsPerEliteCrate;
+				if(useCustomTableElite)
+				{
+					type = "elite";
 				}
 				else
 				{
@@ -1550,6 +1998,238 @@ namespace Oxide.Plugins
 		void SaveApcCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\ApcCrate", storedApcCrate);
 
 		#endregion ApcCrate
+
+		#region ToolCrate
+
+		class StoredToolCrate
+		{
+			public Dictionary<string, int> ItemList = new Dictionary<string, int>();
+
+			public StoredToolCrate()
+			{
+			}
+		}
+
+		void LoadToolCrate()
+		{
+			storedToolCrate = Interface.GetMod().DataFileSystem.ReadObject<StoredToolCrate>("BetterLoot\\ToolCrate");
+			if (pluginEnabled && storedToolCrate.ItemList.Count > 0 && !includeToolCrate && !useCustomTableTool)
+				Puts("ToolCrate > loot population is disabled by 'includeToolCrate'");
+			if (pluginEnabled && storedToolCrate.ItemList.Count > 0 && !includeToolCrate && useCustomTableTool)
+				Puts("ToolCrate > 'useCustomTableTool' enabled, but loot population inactive by 'includeToolCrate'");
+			if (storedToolCrate.ItemList.Count == 0)
+			{
+				includeToolCrate = false;
+				Config["ToolCrate","includeToolCrate"]= includeToolCrate;
+				Changed = true;
+				Puts("ToolCrate > table not found, option disabled by 'includeToolCrate' > Creating a new file.");
+				storedToolCrate = new StoredToolCrate();
+				foreach(var it in ItemManager.itemList)
+				{
+					int stack = 0;
+					if(!ItemExists(it.shortname)) continue;
+					if(_findTrash.IsMatch(it.shortname)) continue;
+					if(it.shortname == "rock" || it.shortname.Contains("arrow") || it.shortname.Contains("grenade") || it.shortname.Contains("handmade") ||
+					 it.shortname.Contains("bow") || it.shortname.Contains("salvaged") || it.shortname.Contains("knife") ||
+					 it.shortname.Contains("mac") || it.shortname.Contains("waterpipe") || it.shortname.Contains("spear") || it.shortname == "longsword") continue;
+
+					if (it.category == ItemCategory.Weapon) stack = 1;
+ 					if (it.category == ItemCategory.Ammunition && !it.shortname.Contains("rocket.")) stack = 128;
+ 					if (it.category == ItemCategory.Ammunition && it.shortname.Contains("rocket.")) stack = 8;
+ 					if (it.category == ItemCategory.Tool) continue;
+ 					if (it.category == ItemCategory.Traps) continue;
+ 					if (it.category == ItemCategory.Construction) continue;
+ 					if (it.category == ItemCategory.Attire) continue;
+ 					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
+ 					if (it.category == ItemCategory.Misc) continue;
+ 					if (it.category == ItemCategory.Items) continue;
+ 					if (it.category == ItemCategory.Food) continue;
+ 					if (it.category == ItemCategory.Medical) continue;
+ 					if (it.category == ItemCategory.Component) continue;
+					if (stack == 0) stack = 1;
+					storedToolCrate.ItemList.Add(it.shortname,stack);
+				}
+				Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\ToolCrate", storedToolCrate);
+			}
+		}
+
+		void SaveToolCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\ToolCrate", storedToolCrate);
+
+		#endregion ToolCrate
+
+		#region MedicalCrate
+
+		class StoredMedicalCrate
+		{
+			public Dictionary<string, int> ItemList = new Dictionary<string, int>();
+
+			public StoredMedicalCrate()
+			{
+			}
+		}
+
+		void LoadMedicalCrate()
+		{
+			storedMedicalCrate = Interface.GetMod().DataFileSystem.ReadObject<StoredMedicalCrate>("BetterLoot\\MedicalCrate");
+			if (pluginEnabled && storedMedicalCrate.ItemList.Count > 0 && !includeMedicalCrate && !useCustomTableMedical)
+				Puts("MedicalCrate > loot population is disabled by 'includeMedicalCrate'");
+			if (pluginEnabled && storedMedicalCrate.ItemList.Count > 0 && !includeMedicalCrate && useCustomTableMedical)
+				Puts("MedicalCrate > 'useCustomTableMedical' enabled, but loot population inactive by 'includeMedicalCrate'");
+			if (storedMedicalCrate.ItemList.Count == 0)
+			{
+				includeMedicalCrate = false;
+				Config["MedicalCrate","includeMedicalCrate"]= includeMedicalCrate;
+				Changed = true;
+				Puts("MedicalCrate > table not found, option disabled by 'includeMedicalCrate' > Creating a new file.");
+				storedMedicalCrate = new StoredMedicalCrate();
+				foreach(var it in ItemManager.itemList)
+				{
+					int stack = 0;
+					if(!ItemExists(it.shortname)) continue;
+					if(_findTrash.IsMatch(it.shortname)) continue;
+					if(it.shortname == "rock" || it.shortname.Contains("arrow") || it.shortname.Contains("grenade") || it.shortname.Contains("handmade") ||
+					 it.shortname.Contains("bow") || it.shortname.Contains("salvaged") || it.shortname.Contains("knife") ||
+					 it.shortname.Contains("mac") || it.shortname.Contains("waterpipe") || it.shortname.Contains("spear") || it.shortname == "longsword") continue;
+
+				 	if (it.category == ItemCategory.Weapon) stack = 1;
+					if (it.category == ItemCategory.Ammunition && !it.shortname.Contains("rocket.")) stack = 128;
+					if (it.category == ItemCategory.Ammunition && it.shortname.Contains("rocket.")) stack = 8;
+					if (it.category == ItemCategory.Tool) continue;
+					if (it.category == ItemCategory.Traps) continue;
+					if (it.category == ItemCategory.Construction) continue;
+					if (it.category == ItemCategory.Attire) continue;
+					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
+					if (it.category == ItemCategory.Misc) continue;
+					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Food) continue;
+					if (it.category == ItemCategory.Medical) continue;
+					if (it.category == ItemCategory.Component) continue;
+					if (stack == 0) stack = 1;
+					storedMedicalCrate.ItemList.Add(it.shortname,stack);
+				}
+				Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\MedicalCrate", storedMedicalCrate);
+			}
+		}
+
+		void SaveMedicalCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\MedicalCrate", storedMedicalCrate);
+
+		#endregion MedicalCrate
+
+		#region FoodCrate
+
+		class StoredFoodCrate
+		{
+			public Dictionary<string, int> ItemList = new Dictionary<string, int>();
+
+			public StoredFoodCrate()
+			{
+			}
+		}
+
+		void LoadFoodCrate()
+		{
+			storedFoodCrate = Interface.GetMod().DataFileSystem.ReadObject<StoredFoodCrate>("BetterLoot\\FoodCrate");
+			if (pluginEnabled && storedFoodCrate.ItemList.Count > 0 && !includeFoodCrate && !useCustomTableFood)
+				Puts("FoodCrate > loot population is disabled by 'includeFoodCrate'");
+			if (pluginEnabled && storedFoodCrate.ItemList.Count > 0 && !includeFoodCrate && useCustomTableFood)
+				Puts("FoodCrate > 'useCustomTableFood' enabled, but loot population inactive by 'includeFoodCrate'");
+			if (storedFoodCrate.ItemList.Count == 0)
+			{
+				includeFoodCrate = false;
+				Config["FoodCrate","includeFoodCrate"]= includeFoodCrate;
+				Changed = true;
+				Puts("FoodCrate > table not found, option disabled by 'includeFoodCrate' > Creating a new file.");
+				storedFoodCrate = new StoredFoodCrate();
+				foreach(var it in ItemManager.itemList)
+				{
+					int stack = 0;
+					if(!ItemExists(it.shortname)) continue;
+					if(_findTrash.IsMatch(it.shortname)) continue;
+					if(it.shortname == "rock" || it.shortname.Contains("arrow") || it.shortname.Contains("grenade") || it.shortname.Contains("handmade") ||
+					 it.shortname.Contains("bow") || it.shortname.Contains("salvaged") || it.shortname.Contains("knife") ||
+					 it.shortname.Contains("mac") || it.shortname.Contains("waterpipe") || it.shortname.Contains("spear") || it.shortname == "longsword") continue;
+
+					if (it.category == ItemCategory.Weapon) stack = 1;
+					if (it.category == ItemCategory.Ammunition && !it.shortname.Contains("rocket.")) stack = 128;
+					if (it.category == ItemCategory.Ammunition && it.shortname.Contains("rocket.")) stack = 8;
+					if (it.category == ItemCategory.Tool) continue;
+					if (it.category == ItemCategory.Traps) continue;
+					if (it.category == ItemCategory.Construction) continue;
+					if (it.category == ItemCategory.Attire) continue;
+					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
+					if (it.category == ItemCategory.Misc) continue;
+					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Food) continue;
+					if (it.category == ItemCategory.Medical) continue;
+					if (it.category == ItemCategory.Component) continue;
+					if (stack == 0) stack = 1;
+					storedFoodCrate.ItemList.Add(it.shortname,stack);
+				}
+				Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\FoodCrate", storedFoodCrate);
+			}
+		}
+
+		void SaveFoodCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\FoodCrate", storedFoodCrate);
+
+		#endregion FoodCrate
+
+		#region EliteCrate
+
+		class StoredEliteCrate
+		{
+			public Dictionary<string, int> ItemList = new Dictionary<string, int>();
+
+			public StoredEliteCrate()
+			{
+			}
+		}
+
+		void LoadEliteCrate()
+		{
+			storedEliteCrate = Interface.GetMod().DataFileSystem.ReadObject<StoredEliteCrate>("BetterLoot\\EliteCrate");
+			if (pluginEnabled && storedEliteCrate.ItemList.Count > 0 && !includeEliteCrate && !useCustomTableElite)
+				Puts("EliteCrate > loot population is disabled by 'includeEliteCrate'");
+			if (pluginEnabled && storedEliteCrate.ItemList.Count > 0 && !includeEliteCrate && useCustomTableElite)
+				Puts("EliteCrate > 'useCustomTableElite' enabled, but loot population inactive by 'includeEliteCrate'");
+			if (storedEliteCrate.ItemList.Count == 0)
+			{
+				includeEliteCrate = false;
+				Config["EliteCrate","includeEliteCrate"]= includeEliteCrate;
+				Changed = true;
+				Puts("EliteCrate > table not found, option disabled by 'includeEliteCrate' > Creating a new file.");
+				storedEliteCrate = new StoredEliteCrate();
+				foreach(var it in ItemManager.itemList)
+				{
+					int stack = 0;
+					if(!ItemExists(it.shortname)) continue;
+					if(_findTrash.IsMatch(it.shortname)) continue;
+					if(it.shortname == "rock" || it.shortname.Contains("arrow") || it.shortname.Contains("grenade") || it.shortname.Contains("handmade") ||
+					 it.shortname.Contains("bow") || it.shortname.Contains("salvaged") || it.shortname.Contains("knife") ||
+					 it.shortname.Contains("mac") || it.shortname.Contains("waterpipe") || it.shortname.Contains("spear") || it.shortname == "longsword") continue;
+
+					if (it.category == ItemCategory.Weapon) stack = 1;
+					if (it.category == ItemCategory.Ammunition && !it.shortname.Contains("rocket.")) stack = 128;
+					if (it.category == ItemCategory.Ammunition && it.shortname.Contains("rocket.")) stack = 8;
+					if (it.category == ItemCategory.Tool) continue;
+					if (it.category == ItemCategory.Traps) continue;
+					if (it.category == ItemCategory.Construction) continue;
+					if (it.category == ItemCategory.Attire) continue;
+					if (it.category == ItemCategory.Resources && it.shortname != "targeting.computer" && it.shortname != "cctv.camera") continue;
+					if (it.category == ItemCategory.Misc) continue;
+					if (it.category == ItemCategory.Items) continue;
+					if (it.category == ItemCategory.Food) continue;
+					if (it.category == ItemCategory.Medical) continue;
+					if (it.category == ItemCategory.Component) continue;
+					if (stack == 0) stack = 1;
+					storedEliteCrate.ItemList.Add(it.shortname,stack);
+				}
+				Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\EliteCrate", storedEliteCrate);
+			}
+		}
+
+		void SaveEliteCrate() => Interface.GetMod().DataFileSystem.WriteObject("BetterLoot\\EliteCrate", storedEliteCrate);
+
+		#endregion EliteCrate
 
 		#region Blacklist
 
