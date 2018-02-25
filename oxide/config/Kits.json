@@ -1,14 +1,14 @@
 {
   "NPC - GUI Kits": {
     "0": {
-      "description": "Welcome on this server! Here is a list of free kits that you can get.<color=green>Enjoy your stay</color>",
+      "description": "Welcome on this server! Here is a list of free kits that you can get. <color=green>Enjoy your stay</color>",
       "kits": [
         "kit1",
         "kit2"
       ]
     },
     "1235439": {
-      "description": "Welcome on this server! Here is a list of free kits that you can get.<color=green>Enjoy your stay</color>",
+      "description": "Welcome on this server! Here is a list of free kits that you can get. <color=green>Enjoy your stay</color>",
       "kits": [
         "kit1",
         "kit2"
