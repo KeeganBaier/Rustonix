@@ -214,58 +214,58 @@ namespace Oxide.Plugins
 		{
 			rarityItemOverride = (Dictionary<string, object>)GetConfig("Rarity", "Override", defaultItemOverride());
 
-			minItemsPerBarrel =  Convert.ToInt32(GetConfig("Barrel", "minItemsPerBarrel", 1));
-			maxItemsPerBarrel = Convert.ToInt32(GetConfig("Barrel", "maxItemsPerBarrel", 3));
+			minItemsPerBarrel =  Convert.ToInt32(GetConfig("Barrel", "minItemsPerBarrel", 4));
+			maxItemsPerBarrel = Convert.ToInt32(GetConfig("Barrel", "maxItemsPerBarrel", 4));
 			refreshBarrels = Convert.ToBoolean(GetConfig("Barrel", "refreshBarrels", false));
 			barrelTypes = Convert.ToString(GetConfig("Barrel","barrelTypes","loot-barrel|loot_barrel|loot_trash"));
 			enableBarrels = Convert.ToBoolean(GetConfig("Barrel", "enableBarrels", true));
 			randomAmountBarrels = Convert.ToBoolean(GetConfig("Barrel", "randomAmountBarrels", true));
 
-			minItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "minItemsPerCrate", 3));
-			maxItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "maxItemsPerCrate", 6));
+			minItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "minItemsPerCrate", 5));
+			maxItemsPerCrate = Convert.ToInt32(GetConfig("Crate", "maxItemsPerCrate", 5));
 			refreshCrates = Convert.ToBoolean(GetConfig("Crate", "refreshCrates", true));
 			crateTypes = Convert.ToString(GetConfig("Crate","crateTypes","crate_normal_2"));
 			enableCrates = Convert.ToBoolean(GetConfig("Crate", "enableCrates", true));
 			randomAmountCrates = Convert.ToBoolean(GetConfig("Crate", "randomAmountCrates", true));
 
-			minItemsPerSupplyDrop = Convert.ToInt32(GetConfig("SupplyDrop", "minItemsPerSupplyDrop", 3));
-			maxItemsPerSupplyDrop = Convert.ToInt32(GetConfig("SupplyDrop", "maxItemsPerSupplyDrop", 6));
+			minItemsPerSupplyDrop = Convert.ToInt32(GetConfig("SupplyDrop", "minItemsPerSupplyDrop", 5));
+			maxItemsPerSupplyDrop = Convert.ToInt32(GetConfig("SupplyDrop", "maxItemsPerSupplyDrop", 5));
 			includeSupplyDrop = Convert.ToBoolean(GetConfig("SupplyDrop", "includeSupplyDrop", false));
 			useCustomTableSupply = Convert.ToBoolean(GetConfig("SupplyDrop", "useCustomTableSupply", true));
 			randomAmountSupplyDrop = Convert.ToBoolean(GetConfig("SupplyDrop", "randomAmountSupplyDrop", true));
 
-			minItemsPerHeliCrate = Convert.ToInt32(GetConfig("HeliCrate", "minItemsPerHeliCrate", 2));
-			maxItemsPerHeliCrate = Convert.ToInt32(GetConfig("HeliCrate", "maxItemsPerHeliCrate", 4));
+			minItemsPerHeliCrate = Convert.ToInt32(GetConfig("HeliCrate", "minItemsPerHeliCrate", 5));
+			maxItemsPerHeliCrate = Convert.ToInt32(GetConfig("HeliCrate", "maxItemsPerHeliCrate", 5));
 			includeHeliCrate = Convert.ToBoolean(GetConfig("HeliCrate", "includeHeliCrate", false));
 			useCustomTableHeli = Convert.ToBoolean(GetConfig("HeliCrate", "useCustomTableHeli", true));
 			randomAmountHeliCrate = Convert.ToBoolean(GetConfig("HeliCrate", "randomAmountHeliCrate", true));
 
-			minItemsPerApcCrate = Convert.ToInt32(GetConfig("ApcCrate", "minItemsPerApcCrate", 4));
-			maxItemsPerApcCrate = Convert.ToInt32(GetConfig("ApcCrate", "maxItemsPerApcCrate", 6));
+			minItemsPerApcCrate = Convert.ToInt32(GetConfig("ApcCrate", "minItemsPerApcCrate", 5));
+			maxItemsPerApcCrate = Convert.ToInt32(GetConfig("ApcCrate", "maxItemsPerApcCrate", 5));
 			includeApcCrate = Convert.ToBoolean(GetConfig("ApcCrate", "includeApcCrate", false));
 			useCustomTableApc = Convert.ToBoolean(GetConfig("ApcCrate", "useCustomTableApc", true));
 			randomAmountApcCrate = Convert.ToBoolean(GetConfig("ApcCrate", "randomAmountApcCrate", true));
 
 			minItemsPerToolCrate = Convert.ToInt32(GetConfig("ToolCrate", "minItemsPerToolCrate", 4));
-			maxItemsPerToolCrate = Convert.ToInt32(GetConfig("ToolCrate", "maxItemsPerToolCrate", 6));
+			maxItemsPerToolCrate = Convert.ToInt32(GetConfig("ToolCrate", "maxItemsPerToolCrate", 4));
 			includeToolCrate = Convert.ToBoolean(GetConfig("ToolCrate", "includeToolCrate", false));
 			useCustomTableTool = Convert.ToBoolean(GetConfig("ToolCrate", "useCustomTableTool", true));
 			randomAmountToolCrate = Convert.ToBoolean(GetConfig("ToolCrate", "randomAmountToolCrate", true));
 
-			minItemsPerMedicalCrate = Convert.ToInt32(GetConfig("MedicalCrate", "minItemsPerMedicalCrate", 4));
-			maxItemsPerMedicalCrate = Convert.ToInt32(GetConfig("MedicalCrate", "maxItemsPerMedicalCrate", 6));
+			minItemsPerMedicalCrate = Convert.ToInt32(GetConfig("MedicalCrate", "minItemsPerMedicalCrate", 3));
+			maxItemsPerMedicalCrate = Convert.ToInt32(GetConfig("MedicalCrate", "maxItemsPerMedicalCrate", 3));
 			includeMedicalCrate = Convert.ToBoolean(GetConfig("MedicalCrate", "includeMedicalCrate", false));
 			useCustomTableMedical = Convert.ToBoolean(GetConfig("MedicalCrate", "useCustomTableMedical", true));
 			randomAmountMedicalCrate = Convert.ToBoolean(GetConfig("MedicalCrate", "randomAmountMedicalCrate", true));
 
-			minItemsPerFoodCrate = Convert.ToInt32(GetConfig("FoodCrate", "minItemsPerFoodCrate", 4));
-			maxItemsPerFoodCrate = Convert.ToInt32(GetConfig("FoodCrate", "maxItemsPerFoodCrate", 6));
+			minItemsPerFoodCrate = Convert.ToInt32(GetConfig("FoodCrate", "minItemsPerFoodCrate", 2));
+			maxItemsPerFoodCrate = Convert.ToInt32(GetConfig("FoodCrate", "maxItemsPerFoodCrate", 2));
 			includeFoodCrate = Convert.ToBoolean(GetConfig("FoodCrate", "includeFoodCrate", false));
 			useCustomTableFood = Convert.ToBoolean(GetConfig("FoodCrate", "useCustomTableFood", true));
 			randomAmountFoodCrate = Convert.ToBoolean(GetConfig("FoodCrate", "randomAmountFoodCrate", true));
 
-			minItemsPerEliteCrate = Convert.ToInt32(GetConfig("EliteCrate", "minItemsPerEliteCrate", 4));
-			maxItemsPerEliteCrate = Convert.ToInt32(GetConfig("EliteCrate", "maxItemsPerEliteCrate", 6));
+			minItemsPerEliteCrate = Convert.ToInt32(GetConfig("EliteCrate", "minItemsPerEliteCrate", 5));
+			maxItemsPerEliteCrate = Convert.ToInt32(GetConfig("EliteCrate", "maxItemsPerEliteCrate", 5));
 			includeEliteCrate = Convert.ToBoolean(GetConfig("EliteCrate", "includeEliteCrate", false));
 			useCustomTableElite = Convert.ToBoolean(GetConfig("EliteCrate", "useCustomTableElite", true));
 			randomAmountEliteCrate = Convert.ToBoolean(GetConfig("EliteCrate", "randomAmountEliteCrate", true));

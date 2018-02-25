@@ -4,7 +4,7 @@
     "enableBarrels": true,
     "enforceBlacklist": true,
     "maxItemsPerBarrel": 4,
-    "minItemsPerBarrel": 3,
+    "minItemsPerBarrel":4,
     "randomAmountBarrels": true,
     "refreshBarrels": false
   },
@@ -12,9 +12,9 @@
     "crateTypes": "crate_normal_2|crate_tools",
     "enableCrates": true,
     "enforceBlacklist": true,
-    "maxItemsPerCrate": 6,
-    "minItemsPerCrate": 3,
-    "randomAmountCrates": true,
+    "maxItemsPerCrate": 5,
+    "minItemsPerCrate": 5,
+    "randomAmountCrates": false,
     "refreshCrates": true
   },
   "Generic": {
@@ -32,47 +32,47 @@
     "includeHeliCrate": false,
     "enforceBlacklist": true,
     "maxItemsPerHeliCrate": 5,
-    "minItemsPerHeliCrate": 2,
-    "randomAmountHeliCrate": true,
+    "minItemsPerHeliCrate": 5,
+    "randomAmountHeliCrate": false,
     "useCustomTableHeli": true
   },
   "ApcCrate": {
     "includeApcCrate": false,
     "enforceBlacklist": true,
-    "maxItemsPerApcCrate": 6,
-    "minItemsPerApcCrate": 3,
-    "randomAmountApcCrate": true,
+    "maxItemsPerApcCrate": 5,
+    "minItemsPerApcCrate": 5,
+    "randomAmountApcCrate": false,
     "useCustomTableApc": true
   },
   "EliteCrate": {
     "includeEliteCrate": false,
     "enforceBlacklist": true,
-    "maxItemsPerEliteCrate": 6,
-    "minItemsPerEliteCrate": 3,
-    "randomAmountEliteCrate": true,
+    "maxItemsPerEliteCrate": 5,
+    "minItemsPerEliteCrate": 5,
+    "randomAmountEliteCrate": false,
     "useCustomTableElite": true
   },
   "ToolCrate": {
     "includeToolCrate": false,
     "enforceBlacklist": true,
-    "maxItemsPerToolCrate": 6,
-    "minItemsPerToolCrate": 3,
+    "maxItemsPerToolCrate": 4,
+    "minItemsPerToolCrate": 4,
     "randomAmountToolCrate": true,
     "useCustomTableTool": true
   },
   "MedicalCrate": {
     "includeMedicalCrate": false,
     "enforceBlacklist": true,
-    "maxItemsPerMedicalCrate": 6,
+    "maxItemsPerMedicalCrate": 3,
     "minItemsPerMedicalCrate": 3,
     "randomAmountMedicalCrate": true,
     "useCustomTableMedical": true
   },
   "FoodCrate": {
     "includeFoodCrate": false,
-    "enforceBlacklist": true,
-    "maxItemsPerFoodCrate": 6,
-    "minItemsPerFoodCrate": 3,
+    "enforceBlacklist": false,
+    "maxItemsPerFoodCrate": 2,
+    "minItemsPerFoodCrate": 2,
     "randomAmountFoodCrate": true,
     "useCustomTableFood": true
   },
@@ -95,7 +95,7 @@
     "includeSupplyDrop": false,
     "enforceBlacklist": true,
     "maxItemsPerSupplyDrop": 6,
-    "minItemsPerSupplyDrop": 3,
+    "minItemsPerSupplyDrop": 6,
     "randomAmountSupplyDrop": true,
     "useCustomTableSupply": true
   }
