@@ -12,7 +12,7 @@
     "AllowIceberg": false,
     "CheckFoundationForOwner": true,
     "CheckValidOnList": false,
-    "Cooldown": 600,
+    "Cooldown": 180,
     "Countdown": 15,
     "CupOwnerAllowOnBuildingBlocked": true,
     "DailyLimit": 5,
@@ -65,7 +65,7 @@
   "TPR": {
     "AllowCraft": false,
     "BlockTPAOnCeiling": true,
-    "Cooldown": 600,
+    "Cooldown": 180,
     "Countdown": 15,
     "CupOwnerAllowOnBuildingBlocked": true,
     "DailyLimit": 5,
