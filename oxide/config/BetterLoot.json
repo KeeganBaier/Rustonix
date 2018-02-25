@@ -77,12 +77,12 @@
     "useCustomTableFood": true
   },
   "MilitaryCrate": {
-    "includeFoodCrate": false,
+    "includeMilitaryCrate": false,
     "enforceBlacklist": true,
-    "maxItemsPerFoodCrate": 6,
-    "minItemsPerFoodCrate": 3,
-    "randomAmountFoodCrate": true,
-    "useCustomTableFood": true
+    "maxItemsPerMilitaryCrate": 6,
+    "minItemsPerMilitaryCrate": 3,
+    "randomAmountMilitaryCrate": true,
+    "useCustomTableMilitary": true
   },
   "Rarity": {
     "Override": {
